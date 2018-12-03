@@ -15,7 +15,8 @@
         border-top-width: 0px;
         border-bottom-width: 0px;
     }
-    .LogoAndQuotes{
+
+    .LogoAndQuotes {
         height: 100%;
         border-right-width: 2px;
         border-color: black;
@@ -72,7 +73,7 @@
     margin: 1.5vw 0;
 }
 
-.form-group input{
+.form-group input {
     width: 100%;
     border: none;
     font-size: 20px;
@@ -83,49 +84,53 @@
     font-weight: bold;
     color: #777;
 }
-#genrearea label
-{
+
+#genrearea label {
     font-size: 20px;
     font-weight: bold;
-    color: #777;   
+    color: #777;
 }
-#genrearea textarea
-{
+
+#genrearea input{
     width: 100%;
     border: none;
     font-size: 20px;
     border: 2px solid #777;
-    padding: 10px;
-    box-sizing: border-box;
-    font-weight: bold;
-    color: #777;   
-}
-.form-check
-{
-    border: none;
-    font-size: 20px;
-    border-bottom: 2px solid #777;
     outline: none;
-    padding-left: 35px;
+    padding: 5px;
     box-sizing: border-box;
     font-weight: bold;
-    color: #777;   
+    color: #777;
 }
-#termsandcon
+#add
 {
+    margin-left: 5px;
+}
+.form-check {
     border: none;
     font-size: 20px;
     outline: none;
     padding-left: 35px;
+    box-sizing: border-box;
     font-weight: bold;
-    color: #777;   
+    color: #777;
 }
-#termsandcon a
-{
-    color: #777;   
+
+#termsandcon{
+    border: none;
+    font-size: 20px;
+    outline: none;
+    padding-left: 5px;
+    font-weight: bold;
+    color: #777;
 }
+
+#termsandcon a {
+    color: #777;
+}
+
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 
@@ -145,7 +150,7 @@ ul {
 }
 
 
-#next,#submit{
+#next,#submit {
     font-size: 30px;
     align-items: center;
     width: 200px;
@@ -159,11 +164,15 @@ ul {
     border-radius: 1vw;
     padding-left: 10px;
 }
-#next
-{
+
+#next {
     display: none;
 }
 
 #next:hover {
     background: #0584F2;
+}
+
+.marg{
+    margin:4px;
 }
