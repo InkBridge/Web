@@ -38,7 +38,7 @@ function fillcheck() {
 function showafter() {
     document.getElementById('right').style.height = "100%";
     document.getElementById("right").style.borderLeft = "2px solid #000000";
-    document.getElementById("LogoAndQuotes").style.borderRight = "none";
+    document.getElementById("LogoAndQuotes").style.borderRight = "0px";
     document.getElementById('next').style.display = "none";
     document.getElementById('after').style.display = "block";
     document.getElementById('extraquotes').style.display = "block";
