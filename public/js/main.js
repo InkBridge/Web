@@ -140,3 +140,22 @@ function activateblockinternational()
         f.style.display = 'none';
     } 
 }
+$("#tag").on("keypress keyup",()=>{
+    console.log("change");
+var search=$("#tag").val();
+$.ajax({
+    url:"/tag",
+    method:'GET',
+    data:{search:search},
+    dataType:'json'
+})
+.done(function(response){
+    $("#search").html('');
+    response.tags.forEach((tag)=>{
+        $("#search").append('<button>'+tag.name+'</button>');
+    });
+})
+.fail(function(){
+    alert("no internet");
+})
+});
