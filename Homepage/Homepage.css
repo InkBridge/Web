@@ -87,7 +87,7 @@ a:hover{
     color: #007bff;
 }
 
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 570px){
     #logo{
         margin-top: 50px;
         width: 100px;
