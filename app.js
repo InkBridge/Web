@@ -11,7 +11,10 @@ app.use(require("express-session")({
     saveUninitialized: false
 }));
 app.get("/",(req,res)=>{
-	res.render("home");
+	res.render("welcome");
+});
+app.get("/writersignup",(req,res)=>{
+	res.render("wsignup");
 });
 app.listen(3000,function(){
     console.log("runnninng");
