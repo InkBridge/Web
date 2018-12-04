@@ -151,8 +151,8 @@ $.ajax({
     dataType:'json'
 })
 .done(function(response){
-    response.tags.forEach((tag)=>{
          $("#search").html('');
+    response.tags.forEach((tag)=>{
         $("#search").append('<button>'+tag.name+'</button>');
     });
 })

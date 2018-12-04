@@ -28,12 +28,7 @@ app.get("/tag",(req,res)=>{
            if(err) {
                console.log(err);
            } else {
-            if(foundTags.length!=0){
-              res.send( { tags: foundTags,heading:"Found"});
-            }
-            else{
-                res.send({tags:foundTags,heading:"Not Found"});
-            }
+              res.send( { tags: foundTags});
            }
        }); 
 
