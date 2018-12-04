@@ -140,9 +140,10 @@ function activateblockinternational()
         f.style.display = 'none';
     } 
 }
-$("#tag").on("keypress keyup",()=>{
-    console.log("change");
+$("#tag").on("keyup",()=>{
+    $("#search").html('');
 var search=$("#tag").val();
+console.log(search);
 $.ajax({
     url:"/tag",
     method:'GET',
@@ -150,8 +151,8 @@ $.ajax({
     dataType:'json'
 })
 .done(function(response){
-    $("#search").html('');
     response.tags.forEach((tag)=>{
+         $("#search").html('');
         $("#search").append('<button>'+tag.name+'</button>');
     });
 })
