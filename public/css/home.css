@@ -6,7 +6,7 @@
 }
 #left,#right,#center
 {
-	min-height: 55vw;
+	min-height:100%;
     border: none;
     font-size: 20px;
     box-sizing: border-box;
@@ -161,6 +161,12 @@
 {
 	font-size: 2vw;
 	color: black;
+}
+#like
+{
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
 }
 #likes a
 {

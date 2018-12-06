@@ -42,9 +42,9 @@
                 </div>
                 <img class="card-img-top img-responsive" src="/Images/p1.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-heart"></i></a>&nbsp;
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-comment"></i></a>&nbsp;
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-paper-plane"></i></a>&nbsp;
+                  <a class="btn-floating btn-lg btn-tw" type="button" role="button" ><i class="fas fa-heart" id="like"></i></a>&nbsp;
+                  <a class="btn-floating btn-lg btn-tw" type="button" role="button" id="comment"><i class="far fa-comment"></i></a>&nbsp;
+                  <a class="btn-floating btn-lg btn-tw" type="button" role="button" id="share"><i class="far fa-paper-plane"></i></a>&nbsp;
                 </div>
                 <span class="counter" id="likes"><a href="">22</a> likes</span><br>
                 <span class="usercoment"><a href="">Username</a> welcome to my first quote</span>
@@ -59,7 +59,7 @@
                 </div>
                 <img class="card-img-top img-responsive" src="/Images/p2.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-heart"></i></a>&nbsp;
+                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fas fa-heart" id="like" ></i></a>&nbsp;
                   <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-comment"></i></a>&nbsp;
                   <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-paper-plane"></i></a>&nbsp;
                 </div>
@@ -73,7 +73,7 @@
                 </div>
                 <img class="card-img-top img-responsive" src="/Images/p3.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-heart"></i></a>&nbsp;
+                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fas fa-heart" id="like"></i></a>&nbsp;
                   <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-comment"></i></a>&nbsp;
                   <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-paper-plane"></i></a>&nbsp;
                 </div>
@@ -100,13 +100,13 @@
         <div>
           <h3>People you may know</h3>
           <div class="card col-lg-1" id="card1">
-            <img src="/Images/cardicon.png" alt="loading" style="width:80px;border-radius:50%;height:80px;margin-top:4px;">
+            <img src="/Images/cardicon.png" alt="loading" style="width:40px;border-radius:50%;height:40px;margin-top:4px;">
             <p class="title">Abhinandan Purkait</p>
             <p class="titleplace">Bhubaneswar</p>
             <p><button id="followbtn">Follow</button></p>
           </div>
           <div class="card col-lg-1" id="card2">
-            <img src="/Images/cardicon.png" alt="loading" style="width:80px;border-radius:50%;height:80px;margin-top:4px;">
+            <img src="/Images/cardicon.png" alt="loading" style="width:40px;border-radius:50%;height:40px;margin-top:4px;">
             <p class="title">Abhinandan Purkait</p>
             <p class="titleplace">Bhubaneswar</p>
             <p><button id="followbtn">Follow</button></p>
@@ -124,9 +124,27 @@
   $('.close').on('click', function() {
   $(this).parent('.alert').hide();
 });
-
-
 });
+var clicks=0;
+  $(document).ready(function(){
+       $("#like").on({
+          click: function(){       
+        if(clicks%2==0)
+        {
+            $(this).css("-webkit-text-fill-color", "red");
+            $(this).css("-webkit-text-stroke-color", "red");         
+            clicks=1;
+        }
+        else
+        {
+            $(this).css("-webkit-text-fill-color", "white");
+           $(this).css("-webkit-text-stroke-color", "black");         
+          clicks=0;
+        }
+          
+          }});
+
+    });
   
 
 </script>
