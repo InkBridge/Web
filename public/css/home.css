@@ -1,62 +1,152 @@
-*
-{
+* {
 	font-family: Berlin Sans FB;
 	margin: 0;
 	padding: 0;
 }
-#left,#right,#center
-{
+
+#left,
+#right,
+#center {
 	min-height: 55vw;
-    border: none;
-    font-size: 20px;
-    box-sizing: border-box;
-    font-weight: bold;
+	border: none;
+	font-size: 20px;
+	box-sizing: border-box;
+	font-weight: bold;
 }
-.alert
-{
+
+.alert {
 	margin-top: 5%;
+	font-size: 16px;
 }
-.close
-{
+
+.close {
 	position: relative;
 	background-color: transparent;
 	border: none;
 	font-size: 2em;
 	color: $grey;
 	cursor: pointer;
+
 	&:hover {
 		color: inherit;
 	}
 }
+
 #logo {
-    width:20vw;
-    height:20vw;
+	width: 20vw;
+	height: 20vw;
 }
-#welcome
-{
-	min-height:5.5vw;
+
+#welcome {
+	min-height: 5.5vw;
 }
-#center
-{
+
+#center {
 	padding-left: 5vw;
 	padding-right: 5vw;
 }
-#left
-{
+
+#left {
 	z-index: 1;
 	float: left;
 	position: fixed;
 }
-#right
-{
+
+#right {
 	position: fixed;
 	float: right;
 	margin-left: 75%;
 	z-index: 1;
-
+	overflow-y: scroll;
 }
-#center
-{
+
+#center {
 	margin-right: 25%;
 	margin-left: 25%;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 150px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+	background-color: white;
+	margin-left: 10px;
+}
+
+.title {
+	color: black;
+	font-size: 16px;
+}
+
+.titleplace {
+	color: black;
+	font-size: 14px;
+}
+
+#followbtn {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: blue;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 12px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+/* General Buttons */
+#seeall {
+	width: 130px;
+	height: 25px;
+	background: linear-gradient(to bottom, #0abd04 0%, #d56438 100%);
+	/* W3C */
+	border: none;
+	border-radius: 5px;
+	position: relative;
+	border-bottom: 4px solid #2b8bc6;
+	color: #fbfbfb;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+	font-size: 15px;
+	text-align: left;
+	text-indent: 5px;
+	box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, .2);
+	cursor: pointer;
+
+	/* Just for presentation */
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+#seeall:active {
+	box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, .2);
+	top: 1px;
+}
+
+#seeall:after {
+	content: "";
+	width: 0;
+	height: 0;
+	display: block;
+	border-top: 10px solid #000000;
+	border-bottom: 10px solid #0b90e2;
+	border-left: 8px solid transparent;
+	border-right: 10px solid #012b46;
+	position: absolute;
+	opacity: 0.6;
+	right: 0;
+	top: 0;
+	border-radius: 0 5px 5px 0;
+}
+
+#followbtn:hover {
+	opacity: 0.7;
 }
