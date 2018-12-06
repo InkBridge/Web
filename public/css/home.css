@@ -43,15 +43,20 @@
 }
 #left
 {
+	z-index: 1;
 	float: left;
 	position: fixed;
 }
 #right
 {
+	position: fixed;
 	float: right;
+	margin-left: 75%;
+	z-index: 1;
 
 }
 #center
 {
+	margin-right: 25%;
 	margin-left: 25%;
 }

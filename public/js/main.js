@@ -49,11 +49,7 @@ var genreval;
 function addgenre() {
     genreval = document.getElementById("genre").value;
     var ind = genreval.indexOf("#");
-    if (ind != 0 ) {
-        alert("Invalid Hash Tag Renter");
-        //genreval.value = "";
-    }
-    else if (ind == 0 && genreval.length == 1) {
+    if (ind != 0) {
         alert("Invalid Hash Tag Renter");
         //genreval.value = "";
     } else {
