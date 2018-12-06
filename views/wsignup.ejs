@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//geodata.solutions/includes/countrystatecity.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -49,7 +49,7 @@
     </center>
     </div>
     <div class="right col-lg-8 col-md-8 col-sm-12 col-xs-12" id="right">
-        <form method="post" onsubmit="return check();">
+        <form method="post" onsubmit="return check();" id="mainform">
             <h2 class="row text-center">Create an Account</h2>
             <div class="form-row">
                 <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-5">
@@ -77,7 +77,7 @@
                 </div>
                 <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center"></div>
                 <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
-                    <input type="button" id="next" value="Next" onclick="showafter();alterflag();"disabled />
+                    <input type="button" id="next" value="Next" onclick="showafter();alterflag();" disabled />
                 </div>
                 <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center"></div>
                 <div id="after" style="display: none;">
@@ -158,22 +158,22 @@
                         </select>
                     </div>
 
-                    <input type="search" id="tag"/>
+                    <input type="search" id="tag" />
                     <div id="search"></div>
-                    <div class="form-row" id="genrearea">
+                    <div class="form-row col-lg-12 col-md-12 col-sm-12 col-xs-12" id="genrearea">
                         <label for="genre">Enter the genre you want to read(with a # eg: #crime)</label>
                         <br>
-                        <input type="text" value="" data-role="tagsinput" name="genretags" class="genrebox">
-                        <!---table>
-                                <tr id="frstrw">
-                                    <td id="frstcl">
-                                        <input type="text" name="genre" id="genre">
-                                    </td>
-                                    <td>
-                                        <a name="add" id="add" onclick="addgenre();" class="btn btn-danger"><i class="fa fa-plus"></i></a>
-                                    </td>
-                                </tr>
-                            </table--->
+                        <!----input type="text" value="" data-role="tagsinput" name="genretags" class="genrebox"-->
+                        <table>
+                            <tr id="frstrw">
+                                <td id="frstcl">
+                                    <input type="text" name="genre" id="genre">
+                                </td>
+                                <td>
+                                    <a name="add" id="add" onclick="addgenre();" class="btn btn-danger"><i class="fa fa-plus"></i></a>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="form-check col-lg-12 col-md-12 col-sm-12 col-xs-12" id="termsandcon">
                         <input class="form-check-input" type="checkbox" id="terms" required="">
