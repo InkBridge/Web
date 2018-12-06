@@ -143,7 +143,6 @@ function activateblockinternational()
 $("#tag").on("keyup",()=>{
     $("#search").html('');
 var search=$("#tag").val();
-console.log(search);
 $.ajax({
     url:"/tag",
     method:'GET',
@@ -152,7 +151,7 @@ $.ajax({
 })
 .done(function(response){
          $("#search").html('');
-    response.tags.forEach((tag)=>{
+          response.tags.forEach((tag)=>{
         $("#search").append('<button>'+tag.name+'</button>');
     });
 })
