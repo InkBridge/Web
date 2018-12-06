@@ -1,0 +1,57 @@
+*
+{
+	font-family: Berlin Sans FB;
+	margin: 0;
+	padding: 0;
+}
+#left,#right,#center
+{
+	min-height: 55vw;
+    border: none;
+    font-size: 20px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+.alert
+{
+	margin-top: 5%;
+}
+.close
+{
+	position: relative;
+	background-color: transparent;
+	border: none;
+	font-size: 2em;
+	color: $grey;
+	cursor: pointer;
+	&:hover {
+		color: inherit;
+	}
+}
+#logo {
+    width:20vw;
+    height:20vw;
+}
+#welcome
+{
+	min-height:5.5vw;
+}
+#center
+{
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+#left
+{
+	float: left;
+	position: fixed;
+}
+#right
+{
+	float: right;
+
+}
+#center
+{
+	margin-left: 25%;
+}
