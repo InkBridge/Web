@@ -1,24 +1,140 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>InkBridg</title>
+  <title>InkBridge</title>
   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="/Images/logo.png">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/home.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/Images/logo.png">
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/home.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link href="https://unpkg.com/ionicons@4.4.8/dist/css/ionicons.min.css" rel="stylesheet">
+  <meta charset='UTF-8'>
+  <meta name="robots" content="noindex">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <style class="cp-pen-styles">
+    @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500");
+
+      .containernotif {
+          position: relative;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+      }
+
+      .titlenotif {
+          width: 100%;
+          font-size: 15px;
+          letter-spacing: 4px;
+          font-weight: 300;
+          text-transform: uppercase;
+          background: rgb(19, 18, 18);
+          text-align: center;
+          padding: 3% 10px;
+          margin: 5px;
+          color: white;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          margin-top:10px;
+      }
+
+      .titlenotif:before {
+          position: absolute;
+          top: -10px;
+          content: '';
+          border-bottom: 12px solid rgb(17, 16, 16);
+          border-left: 11px solid transparent;
+          border-right: 11px solid transparent;
+      }
+
+      .icon {
+          background: rgb(0, 0, 0);
+          color: white;
+          padding: 8px;
+          border-radius: 50%;
+          font-size: 13px;
+      }
+
+      .notification {
+          margin: 2px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: white;
+          width: 100%;
+          padding-left:5px;
+          border-radius: 2%;
+      }
+
+      .notification .alert {
+          display: flex;
+          align-items: center;
+          color: #555;
+          text-transform: uppercase;
+          font-size: 14px;
+          padding: 0px;
+          margin-left: 5px;
+      }
+
+      .notification .alert-name {
+          font-weight: 500;
+          margin-left: 10px;
+      }
+
+      .notification .alert-time {
+          padding: 10px;
+          font-size: 11px;
+          letter-spacing: 1px;
+          color: #555;
+      }
+
+      @media (max-width: 700px) {
+          .containernotif {
+              display: block;
+              width: 100%;
+          }
+
+          .notification,
+          .titlenotif {
+              box-sizing: border-box;
+          }
+
+          .notification,
+          .titlenotif {
+              width: 100%;
+              margin: 5px 0;
+          }
+      }
+
+      .feedback {
+        background-color : #31B0D5;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 4px;
+        border-color: #46b8da;
+      }
+      
+      #mybutton {
+        position: fixed;
+        z-index:10;
+        right: 10px;
+      }
+  </style>
+</head>
+
 <body>
 
+  <!--Landing-->
 
-
-
-<!--Landing-->
-
-<div class="container-fluid pt-4">
+  <div class="container-fluid pt-4">
     <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 text-center" id="left" style="background: antiquewhite">
+      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 text-center" id="left" style="background: antiquewhite">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <center>
             <img src="/Images/logo.png" class="img-responsive" id="logo"><br>
@@ -27,113 +143,140 @@
         <div class="quotes">
           <i>Sometime we can feel a bit dull in the morning and we need to produce our own sunshine energy.</i><br><br>
           <i>When you’re playing small and want to break out of your current limitations…</i><br><br>
-        </div><br><br>
-        <p><button id="seeall" style="top:15px;">New Content</button></p>
-      </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" id="center">
-              <div class="row text-center" id="welcome">
-                <h2 >Welcome Raied Razi @raied khan</h2>
-              </div>
-              <div class="card mb-3" id="card" >
-                <div class="card-head">
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><img src="/Images/p1.jpg"class="img-responsive"></a>
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><h3 class="card-title">Username</h3></a>&nbsp;
-                </div>
-                <img class="card-img-top img-responsive" src="/Images/p1.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-heart"></i></a>&nbsp;
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-comment"></i></a>&nbsp;
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-paper-plane"></i></a>&nbsp;
-                </div>
-                <span class="counter" id="likes"><a href="">22</a> likes</span><br>
-                <span class="usercoment"><a href="">Username</a> welcome to my first quote</span>
-                <div class="public-coment">
-                  
-                </div>
-              </div>
-              <div class="card mb-3" id="card" >
-                <div class="card-head">
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><img src="/Images/p2.jpg"class="img-responsive"></a>
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><h3 class="card-title">Username</h3></a>&nbsp;
-                </div>
-                <img class="card-img-top img-responsive" src="/Images/p2.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-heart"></i></a>&nbsp;
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-comment"></i></a>&nbsp;
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-paper-plane"></i></a>&nbsp;
-                </div>
-                <span class="counter" id="likes"><a href="">22</a> likes</span><br>
-                <span class="usercoment"><a href="">Username</a> welcome to my first quote</span> 
-              </div>
-              <div class="card mb-3" id="card" >
-                <div class="card-head">
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><img src="/Images/p3.jpg"class="img-responsive"></a>
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><h3 class="card-title">Username</h3></a>&nbsp;
-                </div>
-                <img class="card-img-top img-responsive" src="/Images/p3.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-heart"></i></a>&nbsp;
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-comment"></i></a>&nbsp;
-                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-paper-plane"></i></a>&nbsp;
-                </div>
-                <span class="counter" id="likes"><a href="">22</a> likes</span><br>
-                <span class="usercoment"><a href="">Username</a> welcome to my first quote</span> 
-              </div>
-
-            </div>
-      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 text-center" id="right" style="background: red;">
-        <h3>Notifications</h3>
-        <div class="alert alert-success">
-          <strong>Success</strong> - this is an important alert!<button class="close">&times;</button>
         </div>
-        <div class="alert alert-warning">
-          <strong>Warning</strong> - this is an important alert!<button class="close">&times;</button>
-        </div>
-        <div class="alert alert-danger">
-          <strong>Danger</strong> - this is an important alert!<button class="close">&times;</button>
-        </div>
-        <div class="alert alert-danger">
-          <strong>Danger</strong> - this is an important alert!<button class="close">&times;</button>
-        </div>
-        <p><button id="seeall">See all</button></p>
-        <div>
-          <h3>People you may know</h3>
-          <div class="card col-lg-1" id="card1">
-            <img src="/Images/cardicon.png" alt="loading" style="width:80px;border-radius:50%;height:80px;margin-top:4px;">
-            <p class="title">Abhinandan Purkait</p>
-            <p class="titleplace">Bhubaneswar</p>
-            <p><button id="followbtn">Follow</button></p>
-          </div>
-          <div class="card col-lg-1" id="card2">
-            <img src="/Images/cardicon.png" alt="loading" style="width:80px;border-radius:50%;height:80px;margin-top:4px;">
-            <p class="title">Abhinandan Purkait</p>
-            <p class="titleplace">Bhubaneswar</p>
-            <p><button id="followbtn">Follow</button></p>
-          </div>
-        </div>
-        <p><button id="seeall" style="top:15px;">See all</button></p>
       </div>
     </div>
-</div>
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" id="center">
+      <div class="row text-center" id="welcome">
+        <h2>Welcome Raied Razi @raied khan</h2>
+      </div>
+      <div class="card mb-3" id="card">
+        <div class="card-head">
+          <a class="btn-floating btn-lg btn-tw" type="button" role="button"><img src="/Images/p1.jpg" class="img-responsive"></a>
+          <a class="btn-floating btn-lg btn-tw" type="button" role="button">
+            <h3 class="card-title">Username</h3>
+          </a>&nbsp;
+        </div>
+        <img class="card-img-top img-responsive" src="/Images/p1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-heart"></i></a>&nbsp;
+          <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-comment"></i></a>&nbsp;
+          <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-paper-plane"></i></a>&nbsp;
+        </div>
+        <span class="counter" id="likes"><a href="">22</a> likes</span><br>
+        <span class="usercoment"><a href="">Username</a> welcome to my first quote</span>
+        <div class="public-coment">
 
-<!--End Landing-->
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script >
-  $(document).ready(function () {
-  $('.close').on('click', function() {
-  $(this).parent('.alert').hide();
-});
+        </div>
+      </div>
+      <div class="card mb-3" id="card">
+        <div class="card-head">
+          <a class="btn-floating btn-lg btn-tw" type="button" role="button"><img src="/Images/p2.jpg" class="img-responsive"></a>
+          <a class="btn-floating btn-lg btn-tw" type="button" role="button">
+            <h3 class="card-title">Username</h3>
+          </a>&nbsp;
+        </div>
+        <img class="card-img-top img-responsive" src="/Images/p2.jpg" alt="Card image cap">
+        <div class="card-body">
+          <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-heart"></i></a>&nbsp;
+          <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-comment"></i></a>&nbsp;
+          <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-paper-plane"></i></a>&nbsp;
+        </div>
+        <span class="counter" id="likes"><a href="">22</a> likes</span><br>
+        <span class="usercoment"><a href="">Username</a> welcome to my first quote</span>
+      </div>
+      <div class="card mb-3" id="card">
+        <div class="card-head">
+          <a class="btn-floating btn-lg btn-tw" type="button" role="button"><img src="/Images/p3.jpg" class="img-responsive"></a>
+          <a class="btn-floating btn-lg btn-tw" type="button" role="button">
+            <h3 class="card-title">Username</h3>
+          </a>&nbsp;
+        </div>
+        <img class="card-img-top img-responsive" src="/Images/p3.jpg" alt="Card image cap">
+        <div class="card-body">
+          <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-heart"></i></a>&nbsp;
+          <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-comment"></i></a>&nbsp;
+          <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="far fa-paper-plane"></i></a>&nbsp;
+        </div>
+        <span class="counter" id="likes"><a href="">22</a> likes</span><br>
+        <span class="usercoment"><a href="">Username</a> welcome to my first quote</span>
+      </div>
+      <div id="mybutton">
+        <button class="feedback">Feedback</button>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 text-center" id="right" style="background: burlywood;">
+      <div class="row">
+        <div class="containernotif">
+          <h3 class="titlenotif">NOTIFICATIONS</h3>
+          <div class="notification">
+            <div class="alert">
+              <i class="icon fa fa-star"></i>
+              <div class="alert-content">
+                <span class="alert-name">Notification</span></div>
+            </div>
+            <div class="alert-time">now</div>
+          </div>
+          <div class="notification">
+            <div class="alert">
+              <i class="icon fa fa-comment"></i>
+              <div class="alert-content">
+                <span class="alert-name">Notification</span></div>
+            </div>
+            <div class="alert-time">5s</div>
+          </div>
+          <div class="notification">
+            <div class="alert">
+              <i class="icon fa fa-sticky-note"></i>
+              <div class="alert-content">
+                <span class="alert-name">Notification</span></div>
+            </div>
+            <div class="alert-time">3m</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <p><a id="seeall" style="margin-top:5px;">See all</a></p>
+      </div>
+      <div class="row">
+        <center>
+          <h3>People you may know</h3>
+          <div class="card col-lg-1 col-md-1 col-sm-1 col-xs-1" id="card2">
+            <img src="/Images/cardicon.png" alt="loading" style="width:80px;border-radius:50%;height:80px;margin-top:4px;">
+            <p class="title">Abhinandan Purkait</p>
+            <p class="titleplace">Bhubaneswar</p>
+            <p><button id="followbtn">Follow</button></p>
+          </div>
+          <div class="card  col-lg-1 col-md-1 col-sm-1 col-xs-1" id="card2">
+            <img src="/Images/cardicon.png" alt="loading" style="width:80px;border-radius:50%;height:80px;margin-top:4px;">
+            <p class="title">Abhinandan Purkait</p>
+            <p class="titleplace">Bhubaneswar</p>
+            <p><button id="followbtn">Follow</button></p>
+          </div>
+        </center>
+      </div>
+      <div class="row">
+        <p><a id="seeall" style="top:25px;">See all</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!--End Landing-->
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.close').on('click', function () {
+        $(this).parent('.alert').hide();
+      });
 
 
-});
-  
-
-</script>
+    });
+  </script>
 
 
 
 
 
 </body>
+
 </html>
