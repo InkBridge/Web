@@ -70,6 +70,8 @@
 	background-color: white;
 	margin-left: 8px;
 	border-radius: 10px;
+	box-shadow:3px 3px 2px #5c5959;
+	background-image: radial-gradient(circle, #ffffff, #e7e8e9, #cdd2d3, #b7bcba, #a4a6a0);
 }
 
 .title {
