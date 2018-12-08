@@ -168,3 +168,14 @@ body
 	border-bottom: 2px solid black;
 	color: black;
 }
+
+#logo {
+	width: 20vw;
+	height: 20vw;
+}
+.quotes
+{
+	font-family: 'Amarante', cursive;
+	font-size: 1.5vw;
+}
+
