@@ -24,6 +24,9 @@ app.get("/writersignup",(req,res)=>{
 app.get("/home",(req,res)=>{
   res.render("home");
 });
+app.get("/homenew",(req,res)=>{
+  res.render("homenew");
+});
 app.get("/tag",(req,res)=>{
 	if (req.query.search) {
        const regex = new RegExp(escapeRegex(req.query.search), 'gi');

@@ -1,0 +1,170 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background:#fafafa;
+}
+.navbar
+{
+	background-color:#979A9A !important;
+}
+#notification
+{
+	margin-right: 16vw;
+}
+#notification:hover
+{
+	-webkit-text-stroke-width:2px;
+	color:#F4D03F;
+	-webkit-text-stroke-color:black;
+}
+#people
+{
+	margin-right: 5vw;	
+}
+.nav-item i
+{
+	margin-top: 0.5vw;
+	font-size: 25px;	 
+	-webkit-text-stroke-width:2px;
+	color: white;
+	-webkit-text-stroke-color:black;
+}
+.navbar-brand
+{	
+	font-family: 'Arizonia', cursive;
+	-webkit-text-stroke-width:1px;
+	-webkit-text-fill-color:black;
+	-webkit-text-stroke-color: black;
+	font-size:23px;
+}
+#welcome
+{
+	font-family: 'Amarante', cursive;
+}
+#left,#right,#center {
+	min-height: 100%;
+	border: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+#left
+{
+	position: fixed;
+	float: left;
+	z-index: 1;
+	left: 2vw;
+}
+#center
+{
+	margin-left: 25%;
+	margin-right: 25%;
+}
+#right
+{
+	position: fixed;	
+	float: right;
+	right: 2vw;
+}
+
+.card-head img {
+	height: 3vw;
+	width: 3vw;
+	border-radius: 50%;
+	outline: none;
+	cursor: pointer;
+	margin-bottom: 1vw;
+	margin-left: -1.5vw;
+}
+#username
+{
+	font-family: 'Amarante', cursive;
+	font-size: 2vw;
+	margin-left: -2.5vw;
+	cursor: pointer;
+}
+.card {
+	background: #fff;
+	box-shadow: 0.8vw 0.3vw 0.8vw #888888;
+	padding: 2vw;
+	box-sizing: border-box;
+	border-radius: 1vw;
+	margin-top: 7%;
+}
+.up-section 
+{
+	margin-left: -2.5vw;
+}
+
+.up-section i {
+	font-size: 2vw;
+	color: black;
+	cursor: pointer;
+}
+.liked {
+	-webkit-text-fill-color: red;
+	-webkit-text-stroke-color: red;
+}
+
+.disliked 
+{
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-color: black;
+}
+
+#likes a {
+	text-decoration: none;
+	color: black;
+}
+.bottom-section 
+{
+	margin-left: -1vw;
+	font-size: 1.5vw;
+}
+.usercoment a {
+	font-family: 'Amarante', cursive;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.usercoment 
+{
+	font-weight: normal;	
+}
+
+.morecoment a 
+{
+	text-decoration: none;
+	color: #777;
+}
+
+.timeadd 
+{
+	font-size: 1vw;
+	font-weight: lighter;
+	color: #777;
+}
+
+.addcoment textarea 
+{
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid #777;
+	outline: none;
+	box-sizing: border-box;
+	color: #777;
+}
+.addcoment textarea :focus
+{
+	color: black;
+}
+.md-form textarea:focus
+{
+	border-bottom: 2px solid black;
+	color: black;
+}

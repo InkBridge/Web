@@ -244,46 +244,48 @@
 .fa-plus {
 	font-size: 0.8vw;
 }
-
-nav {
-	background-image: linear-gradient(to right, rgb(62, 192, 170), rgba(255, 0, 0, 0));
-}
-
-.name {
-	margin-top: 20px;
+#welcome{
 	font-size: 2vw;
-	display: inline-block;
-}
+            color: white;
+            margin-left: 0%;
+            margin-right: 0%;
+            font-family: 'Cuprum', sans-serif;
+        }
 
-ul {
-	list-style-type: none;
-	margin: 0%;
-	padding: 0%;
-}
+        #navname{
+        	font-size: 2vw;
+            color: white;
+            margin-left: 4px;
+            font-family: 'Cuprum', sans-serif;
+        }
+        
+        #username{
+            font-weight: 100;
+            font-family: 'Satisfy', cursive;
+            font-size: 2vw;
+            transition: all 0.3s ease-in;
+            text-decoration:none;
+            color: white;
+            position: absolute; 
+            right: 0px;
+        }
 
+        #username:hover{
+            -webkit-stroke-width: 5.3px;
+            -webkit-stroke-color: #FFFFFF;
+            -webkit-fill-color: #FFFFFF;
+            text-shadow: 1px 0px 20px white;  
+        }
 
-#text {
-
-	font-weight: 100;
-	font-family: 'Dancing Script', cursive;
-	font-size: 20px;
-	transition: all 0.3s ease-in;
-	text-decoration: none;
-	color: white;
-}
-
-#text:hover {
-	-webkit-stroke-width: 5.3px;
-	-webkit-stroke-color: #FFFFFF;
-	-webkit-fill-color: #FFFFFF;
-	text-shadow: 1px 0px 20px white;
-}
-
-#navbar {
-	margin-right: -5vw;
-	margin-left: -2.65vw;
-}
-
+        nav{
+            background-image: linear-gradient(to right, rgb(62, 192, 170), rgba(0, 0, 0, 1));
+        }
+        
+        #navbar
+        {
+        	margin-left: -2.6vw;
+        	margin-right: -3.9vw;
+        }
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500");
 
 .containernotif {
