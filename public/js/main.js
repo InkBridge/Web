@@ -147,9 +147,9 @@ document.getElementById("mainform").onkeypress = function (e) {
     }
 }
 
-$("#tag").on("keyup", () => {
+$("#genre").on("keyup", () => {
     $("#search").html('');
-    var search = $("#tag").val();
+    var search = $("#genre").val();
     console.log(search);
     $.ajax({
             url: "/tag",
@@ -160,9 +160,35 @@ $("#tag").on("keyup", () => {
             dataType: 'json'
         })
         .done(function (response) {
-            $("#search").html('');
+            $("#select_id").html('');
             response.tags.forEach((tag) => {
-                $("#search").append('<button>' + tag.name + '</button>');
+                $('#select_id').append($('<option>', {
+                    value: tag.name,
+                    text: tag.name,
+                    id: tag.name
+                }));
+                $('select[name="select_id"]').change(function () {
+
+                    if ($(this).val() == tag.name) {
+                        var tabledata = document.createElement("td");
+                        var buttonadd = document.createElement("button");
+                        var name = "btn btn-danger marg";
+                        var arr = buttonadd.className.split(" ");
+                        if (arr.indexOf(name) == -1) {
+                            buttonadd.className += " " + name;
+                        }
+                        var node = document.createTextNode(tag.name);
+                        buttonadd.appendChild(node);
+                        if (tag.name.length > 0) {
+                            tabledata.appendChild(buttonadd);
+                            var element = document.getElementById("frstrw");
+                            var child = document.getElementById("frstcl");
+                            element.insertBefore(tabledata, child);
+                            document.getElementById("genre").value = "";
+                        }
+                    }
+
+                });
             });
         })
         .fail(function () {
