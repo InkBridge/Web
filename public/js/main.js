@@ -25,9 +25,7 @@ function fillcheck() {
     if (flag == true)
         f.style.display = 'none';
     else {
-        if (password.length != 0 && password1.length != 0 && fullname.length != 0 && penname.length != 0 &&
-            email.length !=
-            0) {
+        if (password.length != 0 && password1.length != 0 && fullname.length != 0 && penname.length != 0 && email.length != 0) {
             f.disabled = false;
         } else {
             f.disabled = true;
@@ -47,16 +45,14 @@ function showafter() {
 var genreval;
 
 function addgenre() {
-    genreval = document.getElementById("genrebox").value;
+    genreval = document.getElementById("genre").value;
     var ind = genreval.indexOf("#");
-    if (ind != 0)
-    {
+    if (ind != 0) {
         alert("Invalid Hash Tag Renter");
-        genreval.value = "";
-    }
-    else {
+        //genreval.value = "";
+    } else {
 
-        /*var tabledata = document.createElement("td");
+        var tabledata = document.createElement("td");
         var buttonadd = document.createElement("button");
         var name = "btn btn-danger marg";
         var arr = buttonadd.className.split(" ");
@@ -71,7 +67,7 @@ function addgenre() {
             var child = document.getElementById("frstcl");
             element.insertBefore(tabledata, child);
             document.getElementById("genre").value = "";
-        }*/
+        }
     }
 }
 
@@ -113,32 +109,26 @@ function enabler1() {
     }
 }
 
-function activateblockregional()
-{
+function activateblockregional() {
     var check = document.getElementById("regoption");
     var f = document.getElementById("reglang");
-    if (check.checked)
-    {
+    if (check.checked) {
         f.style.display = 'block';
     }
-    if (!check.checked)
-    {
+    if (!check.checked) {
         f.style.display = 'none';
-    } 
+    }
 }
 
-function activateblockinternational()
-{
+function activateblockinternational() {
     var check = document.getElementById("intoption");
     var f = document.getElementById("intlang");
-    if (check.checked)
-    {
+    if (check.checked) {
         f.style.display = 'block';
     }
-    if (!check.checked)
-    {
+    if (!check.checked) {
         f.style.display = 'none';
-    } 
+    }
 }
 
 var enter = document.getElementById("genre");
@@ -156,7 +146,7 @@ document.getElementById("mainform").onkeypress = function (e) {
 }
 
 $("#genre").on("keyup", () => {
-    $("#search").html('');
+    $("#select_id").html('');
     var search = $("#genre").val();
     console.log(search);
     $.ajax({
