@@ -47,14 +47,16 @@ function showafter() {
 var genreval;
 
 function addgenre() {
-    genreval = document.getElementById("genre").value;
+    genreval = document.getElementById("genrebox").value;
     var ind = genreval.indexOf("#");
-    if (ind != 0) {
+    if (ind != 0)
+    {
         alert("Invalid Hash Tag Renter");
-        //genreval.value = "";
-    } else {
+        genreval.value = "";
+    }
+    else {
 
-        var tabledata = document.createElement("td");
+        /*var tabledata = document.createElement("td");
         var buttonadd = document.createElement("button");
         var name = "btn btn-danger marg";
         var arr = buttonadd.className.split(" ");
@@ -69,7 +71,7 @@ function addgenre() {
             var child = document.getElementById("frstcl");
             element.insertBefore(tabledata, child);
             document.getElementById("genre").value = "";
-        }
+        }*/
     }
 }
 
@@ -111,26 +113,32 @@ function enabler1() {
     }
 }
 
-function activateblockregional() {
+function activateblockregional()
+{
     var check = document.getElementById("regoption");
     var f = document.getElementById("reglang");
-    if (check.checked) {
+    if (check.checked)
+    {
         f.style.display = 'block';
     }
-    if (!check.checked) {
+    if (!check.checked)
+    {
         f.style.display = 'none';
-    }
+    } 
 }
 
-function activateblockinternational() {
+function activateblockinternational()
+{
     var check = document.getElementById("intoption");
     var f = document.getElementById("intlang");
-    if (check.checked) {
+    if (check.checked)
+    {
         f.style.display = 'block';
     }
-    if (!check.checked) {
+    if (!check.checked)
+    {
         f.style.display = 'none';
-    }
+    } 
 }
 
 var enter = document.getElementById("genre");
