@@ -42,7 +42,7 @@ function showafter() {
     document.getElementById('extraquotes').style.display = "block";
 }
 
-var genreval;
+/*var genreval;
 
 function addgenre() {
     genreval = document.getElementById("genre").value;
@@ -69,7 +69,7 @@ function addgenre() {
             document.getElementById("genre").value = "";
         }
     }
-}
+}*/
 
 function enabler() {
     var i = 1;
@@ -168,6 +168,7 @@ $("#genre").on("keyup", () => {
                 $('select[name="select_id"]').change(function () {
 
                     if ($(this).val() == tag.name) {
+                        console.log("hello");
                         var tabledata = document.createElement("td");
                         var buttonadd = document.createElement("button");
                         var name = "btn btn-danger marg";

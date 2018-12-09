@@ -207,7 +207,7 @@ ul {
     margin:4px;
 }
 
-#genrebox{
+#genre{
     width: 100%;
     border: none;
     font-size: 20px;
@@ -217,6 +217,7 @@ ul {
     box-sizing: border-box;
     font-weight: bold;
     color: #777;
+    height: 33px;
 }
 
 #reglang{
