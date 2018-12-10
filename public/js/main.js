@@ -44,7 +44,7 @@ function showafter() {
 
 function addgenre() {
     genreval = document.getElementById("select_id").value;
-    var tabledata = document.createElement("td");
+    
     var buttonadd = document.createElement("button");
     var name = "btn btn-danger marg";
     var arr = buttonadd.className.split(" ");
@@ -53,11 +53,10 @@ function addgenre() {
     }
     var node = document.createTextNode(genreval);
     buttonadd.appendChild(node);
+
     if (genreval.length > 0) {
-        tabledata.appendChild(buttonadd);
-        var element = document.getElementById("frstrw");
-        var child = document.getElementById("frstcl");
-        element.insertBefore(tabledata, child);
+        var element = document.getElementById("addhere");
+        element.appendChild(buttonadd);
         document.getElementById("genre").value = "";
     }
 }
@@ -137,7 +136,6 @@ document.getElementById("mainform").onkeypress = function (e) {
 }
 
 $("#genre").on("keyup", () => {
-    $("#select_id").html('');
     var search = $("#genre").val();
     console.log(search);
     $.ajax({
@@ -149,7 +147,11 @@ $("#genre").on("keyup", () => {
             dataType: 'json'
         })
         .done(function (response) {
-            $("#select_id").html('');
+            $("#select_id").html($('<option>', {
+                value: "dummy",
+                text: "-------SELECT HERE------",
+                id: "dummy",
+            }));
             response.tags.forEach((tag) => {
                 $('#select_id').append($('<option>', {
                     value: tag.name,
