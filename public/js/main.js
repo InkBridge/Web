@@ -44,20 +44,27 @@ function showafter() {
 
 function addgenre() {
     genreval = document.getElementById("select_id").value;
-    
+
     var buttonadd = document.createElement("button");
     var name = "btn btn-danger marg";
     var arr = buttonadd.className.split(" ");
     if (arr.indexOf(name) == -1) {
         buttonadd.className += " " + name;
     }
+    buttonadd.id = genreval+"b";
     var node = document.createTextNode(genreval);
     buttonadd.appendChild(node);
-
-    if (genreval.length > 0) {
-        var element = document.getElementById("addhere");
-        element.appendChild(buttonadd);
-        document.getElementById("genre").value = "";
+    
+    var myElement = document.getElementById(genreval+"b");
+    if (myElement) {
+        document.getElementById("repeattext").innerHTML="* Already Selected";
+    } else {
+        document.getElementById("repeattext").innerHTML="";
+        if (genreval.length > 0) {
+            var element = document.getElementById("addhere");
+            element.appendChild(buttonadd);
+            document.getElementById("genre").value = "";
+        }
     }
 }
 
