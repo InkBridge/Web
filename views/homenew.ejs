@@ -10,8 +10,7 @@
   <link rel="stylesheet" type="text/css" href="/css/homenew.css">
   <link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amarante" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" crossorigin="anonymous">
 </head>
 
 <body>
@@ -33,7 +32,7 @@
           <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
         </li>
         <li class="nav-item" id="notification">
-          <a class="nav-link" href="#" onclick="shownotif();"><i class="fas fa-bell"></i></a>
+          <a class="nav-link" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fas fa-bell"></i></a>
         </li>
         <li class="nav-item">
           <a class="navbar-brand" href="#" id="welcome">
@@ -46,54 +45,7 @@
   </nav>
 
   <!--End Navbar-->
-  <!--Top Portion-->
-  <div class="notification-body" id="notif-top">
-    <div class="page-header text-center">
-      <h4 class="notification-title">Notifications</h4>
-    </div>
-    <div class="notifications">
-      <ul class="notification-list">
-        <li>
-          <div class="media">
-            <div class="media-left">
-              <a href="#">
-                <img src="https://cdn4.iconfinder.com/data/icons/mayssam/512/user-128.png" class="media-object cat-icon rounded"
-                  alt="...">
-              </a>
-            </div>
-            <div class="media-body">
-              <ul class="n-user-list">
-                <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
-                <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
-              </ul>
-              <p class="media-heading"><b>Ranjeet Rajput</b> and <b>Abhishek Rajput</b> followed you.</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="media">
-            <div class="media-left">
-              <a href="#">
-                <img src="https://cdn4.iconfinder.com/data/icons/mayssam/512/heart-128.png" class="media-object cat-icon rounded-circle"
-                  alt="...">
-              </a>
-            </div>
-            <div class="media-body">
-              <ul class="n-user-list">
-                <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
-                <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
-                <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
-                <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
-                <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
-              </ul>
-              <p class="media-heading"><b>Ranjeet Rajput</b> and 4 others Like your Post.</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!--Top Portion Ends-->
+
   <!--Landing page-->
   <div class="container mt-4">
     <div class="row">
@@ -116,7 +68,7 @@
           <div class="card-body">
             <div class="up-section">
               <a class="btn-floating btn-lg btn-tw" id="like"><i class="fas fa-heart like disliked"></i></a>
-              <a class="btn-floating btn-lg btn-tw" id="comment"><i class="far fa-comment"></i></a>
+              <a class="btn-floating btn-lg btn-tw" id="comment1" onclick="addfocus(this.id);"><i class="far fa-comment"></i></a>
               <a class="btn-floating btn-lg btn-tw" id="share"><i class="far fa-paper-plane"></i></a>
               <a class="btn-floating btn-lg btn-tw" id="bookmark"><i class="fas fa-bookmark like disliked"></i></a><br>
             </div>
@@ -135,7 +87,7 @@
               <div class="addcoment">
                 <div class="md-form">
                   <form method="post">
-                    <textarea type="text" id="form18" class="md-textarea " placeholder="Add Coments...." rows="1"></textarea>
+                    <textarea type="text" id="comment1F" class="md-textarea " placeholder="Add Comments...." rows="1"></textarea>
                   </form>
                 </div>
               </div>
@@ -152,7 +104,7 @@
           <div class="card-body">
             <div class="up-section">
               <a class="btn-floating btn-lg btn-tw" id="like"><i class="fas fa-heart like disliked"></i></a>
-              <a class="btn-floating btn-lg btn-tw" id="comment"><i class="far fa-comment"></i></a>&nbsp;
+              <a class="btn-floating btn-lg btn-tw" id="comment2" onclick="addfocus(this.id);"><i class="far fa-comment"></i></a>&nbsp;
               <a class="btn-floating btn-lg btn-tw" id="share"><i class="far fa-paper-plane"></i></a>&nbsp;
               <a class="btn-floating btn-lg btn-tw" id="bookmark"><i class="fas fa-bookmark like disliked"></i></a><br>
             </div>
@@ -171,7 +123,7 @@
               <div class="addcoment">
                 <div class="md-form">
                   <form method="post">
-                    <textarea type="text" id="form18" class="md-textarea " placeholder="Add Coments...." rows="1"></textarea>
+                    <textarea type="text" id="comment2F" class="md-textarea " placeholder="Add Comments...." rows="1"></textarea>
                   </form>
                 </div>
               </div>
@@ -188,7 +140,7 @@
           <div class="card-body">
             <div class="up-section">
               <a class="btn-floating btn-lg btn-tw" id="like"><i class="fas fa-heart like disliked"></i></a>
-              <a class="btn-floating btn-lg btn-tw" id="comment"><i class="far fa-comment"></i></a>&nbsp;
+              <a class="btn-floating btn-lg btn-tw" id="comment3" onclick="addfocus(this.id);"><i class="far fa-comment"></i></a>&nbsp;
               <a class="btn-floating btn-lg btn-tw" id="share"><i class="far fa-paper-plane"></i></a>&nbsp;
               <a class="btn-floating btn-lg btn-tw" id="bookmark"><i class="fas fa-bookmark like disliked"></i></a><br>
             </div>
@@ -207,7 +159,7 @@
               <div class="addcoment">
                 <div class="md-form">
                   <form method="post">
-                    <textarea type="text" id="form18" class="md-textarea " placeholder="Add Coments...." rows="1"></textarea>
+                    <textarea type="text" id="comment3F" class="md-textarea " placeholder="Add Comments...." rows="1"></textarea>
                   </form>
                 </div>
               </div>
@@ -304,9 +256,6 @@
         </div>
         <!--End follow-->
 
-
-
-
         <div class="card mb-3" id="stories">
           <div class="card-head">
             <a class="btn-floating btn-lg btn-tw"><img src="/Images/p4.jpg" class="img-responsive"></a>
@@ -316,7 +265,7 @@
           <div class="card-body">
             <div class="up-section">
               <a class="btn-floating btn-lg btn-tw" id="like"><i class="fas fa-heart like disliked"></i></a>
-              <a class="btn-floating btn-lg btn-tw" id="comment"><i class="far fa-comment"></i></a>&nbsp;
+              <a class="btn-floating btn-lg btn-tw" id="comment4" onclick="addfocus(this.id);"><i class="far fa-comment"></i></a>&nbsp;
               <a class="btn-floating btn-lg btn-tw" id="share"><i class="far fa-paper-plane"></i></a>&nbsp;
               <a class="btn-floating btn-lg btn-tw" id="bookmark"><i class="fas fa-bookmark like disliked"></i></a><br>
             </div>
@@ -335,7 +284,7 @@
               <div class="addcoment">
                 <div class="md-form">
                   <form method="post">
-                    <textarea type="text" id="form18" class="md-textarea " placeholder="Add Coments...." rows="1"></textarea>
+                    <textarea type="text" id="comment4F" class="md-textarea " placeholder="Add Comments...." rows="1"></textarea>
                   </form>
                 </div>
               </div>
@@ -343,17 +292,161 @@
           </div>
         </div>
 
-        <!--End center page-->
-
       </div>
 
-      <div class="col-3" style="background: #ECF0F1;" id="right">
+      <!--End center page-->
+
+      <!--Small Screen Notifaction Modal Starts-->
+
+      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" style="overflow-y: scroll; max-height:85%;  margin-top: 50px; margin-bottom:50px;">
+          <div class="modal-content">
+
+            <div class="modal-header text-center">
+              <h4 class="notification-title">Notifications</h4>
+            </div>
+
+            <div class="modal-body">
+              <div class="notification-body">
+                <div class="notifications">
+                  <ul class="notification-list">
+
+                    <!---NOTIFICATION 1 MODAL-->
+
+                    <li>
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img src="https://cdn4.iconfinder.com/data/icons/mayssam/512/user-128.png" class="media-object cat-icon rounded"
+                              alt="...">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <ul class="n-user-list">
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                          </ul>
+                          <p class="media-heading"><b>Abhinandan Purkait</b> and <b>Raeid Razi</b> followed you.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <!---NOTIFICATION 2 MODAL-->
+
+                    <li>
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img src="https://cdn4.iconfinder.com/data/icons/mayssam/512/heart-128.png" class="media-object cat-icon rounded-circle"
+                              alt="...">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <ul class="n-user-list">
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                          </ul>
+                          <p class="media-heading"><b>Abhinandan Purkait</b> and 4 others Like your Post.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <!---NOTIFICATION 3 MODAL-->
+
+                    <li>
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img src="https://cdn4.iconfinder.com/data/icons/mayssam/512/heart-128.png" class="media-object cat-icon rounded-circle"
+                              alt="...">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <ul class="n-user-list">
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                          </ul>
+                          <p class="media-heading"><b>Abhinandan Purkait</b> and 4 others Like your Post.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <!---NOTIFICATION 4 MODAL-->
+
+                    <li>
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img src="https://cdn4.iconfinder.com/data/icons/mayssam/512/heart-128.png" class="media-object cat-icon rounded-circle"
+                              alt="...">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <ul class="n-user-list">
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                          </ul>
+                          <p class="media-heading"><b>Abhinandan Purkait</b> and 4 others Like your Post.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <!---NOTIFICATION 5 MODAL-->
+
+                    <li>
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img src="https://cdn4.iconfinder.com/data/icons/mayssam/512/heart-128.png" class="media-object cat-icon rounded-circle"
+                              alt="...">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <ul class="n-user-list">
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                            <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                          </ul>
+                          <p class="media-heading"><b>Abhinandan Purkait</b> and 4 others Like your Post.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">InkBridge</div>
+          </div>
+        </div>
+      </div>
+
+      <!--Small Screen Notifaction Modal Ends-->
+
+      <!---Right Part Starts-->
+
+      <div class="col-lg-3 col-md-6 col-sm-6" style="background:#ECF0F1;" id="right">
         <div class="notification-body">
           <div class="page-header text-center">
             <h4 class="notification-title">Notifications</h4>
           </div>
           <div class="notifications">
             <ul class="notification-list">
+
+              <!---NOTIFICATION 1 LARGE SCREEN-->
+
               <li>
                 <div class="media">
                   <div class="media-left">
@@ -367,10 +460,13 @@
                       <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
                       <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
                     </ul>
-                    <p class="media-heading"><b>Ranjeet Rajput</b> and <b>Abhishek Rajput</b> followed you.</p>
+                    <p class="media-heading"><b>Abhinandan Purkait</b> and <b>Raeid Razi</b> followed you.</p>
                   </div>
                 </div>
               </li>
+
+              <!---NOTIFICATION 2 LARGE SCREEN-->
+
               <li>
                 <div class="media">
                   <div class="media-left">
@@ -387,27 +483,51 @@
                       <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
                       <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
                     </ul>
-                    <p class="media-heading"><b>Ranjeet Rajput</b> and 4 others Like your Post.</p>
+                    <p class="media-heading"><b>Abhinandan Purkait</b> and 4 others Like your Post.</p>
                   </div>
                 </div>
               </li>
+
+              <!---NOTIFICATION 3 LARGE SCREEN-->
+
+              <li>
+                <div class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img src="https://cdn4.iconfinder.com/data/icons/mayssam/512/user-128.png" class="media-object cat-icon rounded"
+                        alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <ul class="n-user-list">
+                      <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                      <li><a href="#"><img src="/Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                    </ul>
+                    <p class="media-heading"><b>Abhinandan Purkait</b> and <b>Raeid Razi</b> followed you.</p>
+                  </div>
+                </div>
+              </li>
+
             </ul>
           </div>
         </div>
       </div>
+
+      <!---Right Part Ends-->
+
     </div>
   </div>
-  </div>
-  </div>
+
   <!--End Landing page-->
 
-
 </body>
+
 <!--Script Starts-->
+
 <script src="/js/homenew.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-  crossorigin="anonymous">
-</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/Bootstrap/js/bootstrap.bundle.js"></script>
+
 <script>
   $(".fa-heart").click(function () {
     console.log("dd");
@@ -419,7 +539,6 @@
     $(this).toggleClass("like disliked");
   });
 </script>
-<script type="text/javascript" src="/Bootstrap/js/bootstrap.bundle.js"></script>
 
 <!--Script Ends-->
 

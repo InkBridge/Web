@@ -256,7 +256,7 @@ body {
 	font-size: 1.2vw;
 }
 
-#notif-top{
+#notif-top {
 	display: none;
 }
 
@@ -266,81 +266,72 @@ body {
 
 /*Desktop View Starts*/
 
-@media only screen and (min-width: 992px) 
-{
-	
+@media only screen and (min-width: 992px) {
+
+
+	/*-----NOTIFICATION CSS-----*/
+
+	.notification-body {
+		padding: 0.8vw;
+		font-size: 1.2vw;
+	}
+
+	.notification-title {
+		font-size: 1.8vw;
+	}
+
+	.notification-list,
+	.n-user-list {
+		list-style: outside none none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.notification-list>li {
+		border-bottom: 1px solid rgb(175, 164, 164);
+		margin-bottom: 0.5vw;
+		padding: 0.5vw 0;
+	}
+
+	.notification-list .cat-icon {
+		width: 1.5vw;
+		margin: 0.5vw;
+		margin-right: 0.8vw;
+	}
+
+	.notification-list .avatar {
+		width: 2vw;
+	}
+
+	.rounded {
+		border-radius: 0.25rem;
+	}
+
+	.n-user-list {
+		margin-bottom: 0.5vw;
+	}
+
+	.n-user-list:after {
+		clear: both;
+		content: '';
+		display: table;
+	}
+
+	.n-user-list li {
+		float: left;
+	}
+
+	.n-user-list li+li {
+		margin-left: 0.3vw;
+	}
+
+	.n-user-list li a,
+	.n-user-list li a:hover {
+		text-decoration: none;
+	}
+
+	/*-----NOTIFICATION CSS ENDS-----*/
 }
-
-
-/*-----NOTIFICATION CSS-----*/
-
-.notification-body {
-	padding: 0.8vw;
-	font-size: 1.2vw;
-}
-
-.notification-title {
-	font-size: 1.8vw;
-}
-
-.notification-list,
-.n-user-list {
-	list-style: outside none none;
-	margin: 0;
-	padding: 0;
-}
-
-.notification-list>li {
-	border-bottom: 1px solid rgb(175, 164, 164);
-	margin-bottom: 0.5vw;
-	padding: 0.5vw 0;
-}
-
-.notification-list .cat-icon {
-	width: 1.5vw;
-	margin: 0.5vw;
-	margin-right: 0.8vw;
-}
-
-.notification-list .avatar {
-	width: 2vw;
-}
-
-.rounded {
-	border-radius: 0.25rem;
-}
-
-.n-user-list {
-	margin-bottom: 0.5vw;
-}
-
-.n-user-list:after {
-	clear: both;
-	content: '';
-	display: table;
-}
-
-.n-user-list li {
-	float: left;
-}
-
-.n-user-list li+li {
-	margin-left: 0.3vw;
-}
-
-.n-user-list li a,
-.n-user-list li a:hover {
-	text-decoration: none;
-}
-
-/*-----NOTIFICATION CSS ENDS-----*/
-
-
-
-
-
-
-
 
 /*Desktop View Ends*/
 
@@ -474,6 +465,76 @@ body {
 		padding: 0.5vw;
 		font-size: 1.5vw;
 	}
+
+
+
+	/*-----NOTIFICATION CSS-----*/
+
+	.notification-body {
+		padding: 0.8vw;
+		font-size: 3vw;
+	}
+
+	.notification-title {
+		font-size: 3.2vw;
+	}
+
+	.notification-list,
+	.n-user-list {
+		list-style: outside none none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.notification-list>li {
+		border-bottom: 1px solid rgb(175, 164, 164);
+		margin-bottom: 0.5vw;
+		padding: 0.5vw 0;
+	}
+
+	.notification-list .cat-icon {
+		width: 3.5vw;
+		margin: 0.5vw;
+		margin-right: 0.8vw;
+	}
+
+	.notification-list .avatar {
+		width: 3vw;
+	}
+
+	.rounded {
+		border-radius: 0.25rem;
+	}
+
+	.n-user-list {
+		margin-bottom: 0.5vw;
+	}
+
+	.n-user-list:after {
+		clear: both;
+		content: '';
+		display: table;
+	}
+
+	.n-user-list li {
+		float: left;
+	}
+
+	.n-user-list li+li {
+		margin-left: 0.3vw;
+	}
+
+	.n-user-list li a,
+	.n-user-list li a:hover {
+		text-decoration: none;
+	}
+
+	.modal-body {
+		height: 250px;
+		overflow-y: scroll;
+	}
+
+	/*-----NOTIFICATION CSS ENDS-----*/
 }
 
 /*Mobile View Ends*/
