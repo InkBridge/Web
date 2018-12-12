@@ -259,16 +259,18 @@ body {
 #notif-top{
 	display: none;
 }
+
+
 /*Universal Css Ends*/
 
 
 /*Desktop View Starts*/
 
-@media only screen and (min-width: 992px) {
-	#show-suggestions {
-		display: none;
-	}
+@media only screen and (min-width: 992px) 
+{
+	
 }
+
 
 /*-----NOTIFICATION CSS-----*/
 
@@ -333,7 +335,17 @@ body {
 
 /*-----NOTIFICATION CSS ENDS-----*/
 
+
+
+
+
+
+
+
 /*Desktop View Ends*/
+
+
+
 
 
 
