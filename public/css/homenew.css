@@ -1,74 +1,78 @@
 /*Universal Css Starts*/
 
 
-*
-{
+* {
 	margin: 0;
 	padding: 0;
 }
-body
-{
-	background:#fafafa;
+
+body {
+	background: #fafafa;
 }
-.navbar
-{
-	background-color:#979A9A !important;
+
+.navbar {
+	background-color: #979A9A !important;
 }
-#notification
-{
+
+#notification {
 	margin-right: 16vw;
+	display: none;
 }
-#notification:hover
-{
-	-webkit-text-stroke-width:2px;
-	color:#F4D03F;
-	-webkit-text-stroke-color:black;
-}
-#people
-{
-	margin-right: 5vw;	
-}
-.nav-item i
-{
-	margin-top: 0.5vw;
-	font-size: 25px;	 
-	-webkit-text-stroke-width:2px;
-	color: white;
-	-webkit-text-stroke-color:black;
-}
-.navbar-brand
-{	
-	font-family: 'Arizonia', cursive;
-	-webkit-text-stroke-width:1px;
-	-webkit-text-fill-color:black;
+
+#notification:hover {
+	-webkit-text-stroke-width: 2px;
+	color: #F4D03F;
 	-webkit-text-stroke-color: black;
-	font-size:23px;
 }
-#welcome
-{
+
+#people {
+	margin-right: 5vw;
+}
+
+.nav-item i {
+	margin-top: 0.5vw;
+	font-size: 25px;
+	-webkit-text-stroke-width: 2px;
+	color: white;
+	-webkit-text-stroke-color: black;
+}
+
+.navbar-brand {
+	font-family: 'Arizonia', cursive;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-fill-color: black;
+	-webkit-text-stroke-color: black;
+	font-size: 23px;
+}
+
+#welcome {
 	font-family: 'Amarante', cursive;
 }
-#left,#right,#center {
+
+#left,
+#center {
 	min-height: 100%;
 	border: none;
 	font-size: 20px;
 	font-weight: bold;
 }
-#left
-{
+
+#left {
 	position: fixed;
 	float: left;
 	z-index: 1;
 	left: 2vw;
 }
-#center
-{
+
+#center {
 	margin-left: 25%;
 	margin-right: 25%;
 }
-#right
-{
-	position: fixed;	
+
+#right {
+	min-height: 100%;
+	border: none;
+	position: fixed;
 	float: right;
 	right: 2vw;
 }
@@ -82,13 +86,14 @@ body
 	margin-bottom: 1vw;
 	margin-left: -1.5vw;
 }
-#username
-{
+
+#username {
 	font-family: 'Amarante', cursive;
 	font-size: 2vw;
 	margin-left: -2.5vw;
 	cursor: pointer;
 }
+
 .card {
 	background: #fff;
 	box-shadow: 0.8vw 0.3vw 0.8vw #888888;
@@ -97,8 +102,8 @@ body
 	border-radius: 1vw;
 	margin-top: 7%;
 }
-.up-section 
-{
+
+.up-section {
 	margin-left: -2.5vw;
 }
 
@@ -107,13 +112,13 @@ body
 	color: black;
 	cursor: pointer;
 }
+
 .liked {
 	-webkit-text-fill-color: red;
 	-webkit-text-stroke-color: red;
 }
 
-.disliked 
-{
+.disliked {
 	-webkit-text-stroke-width: 2px;
 	-webkit-text-fill-color: white;
 	-webkit-text-stroke-color: black;
@@ -123,11 +128,12 @@ body
 	text-decoration: none;
 	color: black;
 }
-.bottom-section 
-{
+
+.bottom-section {
 	margin-left: -1vw;
 	font-size: 1.5vw;
 }
+
 .usercoment a {
 	font-family: 'Amarante', cursive;
 	text-decoration: none;
@@ -135,31 +141,27 @@ body
 	font-weight: bold;
 }
 
-.usercoment 
-{
-	font-weight: normal;	
+.usercoment {
+	font-weight: normal;
 }
-.usercoment .fas
-{
- margin-left: 4vw;
+
+.usercoment .fas {
+	margin-left: 4vw;
 
 }
 
-.morecoment a 
-{
+.morecoment a {
 	text-decoration: none;
 	color: #777;
 }
 
-.timeadd 
-{
+.timeadd {
 	font-size: 1vw;
 	font-weight: lighter;
 	color: #777;
 }
 
-.addcoment textarea 
-{
+.addcoment textarea {
 	width: 100%;
 	border: none;
 	border-bottom: 2px solid #777;
@@ -167,12 +169,12 @@ body
 	box-sizing: border-box;
 	color: #777;
 }
-.addcoment textarea :focus
-{
+
+.addcoment textarea :focus {
 	color: black;
 }
-.md-form textarea:focus
-{
+
+.md-form textarea:focus {
 	border-bottom: 2px solid black;
 	color: black;
 }
@@ -181,49 +183,49 @@ body
 	width: 20vw;
 	height: 20vw;
 }
-.quotes
-{
+
+.quotes {
 	font-family: 'Amarante', cursive;
 	font-size: 1.5vw;
 }
 
 #show-suggestions #cards {
-  display: flex;
-  min-height: 15vw;
-  overflow-x: auto; 
+	display: flex;
+	min-height: 15vw;
+	overflow-x: auto;
 }
 
 #cards::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 #card--content {
-  background-color:  #D0D3D4;
-  min-width: 10vw;
-  margin-right: 5px;
-  margin-left: 5px;
-  border-radius: 2vw;
+	background-color: #D0D3D4;
+	min-width: 10vw;
+	margin-right: 5px;
+	margin-left: 5px;
+	border-radius: 2vw;
 }
-#show-suggestions
-{
+
+#show-suggestions {
 	padding-top: 1vw;
- 	padding-bottom: 1vw; 
-	background:#ECF0F1;
+	padding-bottom: 1vw;
+	background: #ECF0F1;
 }
-#show-suggestions img
-{
+
+#show-suggestions img {
 	cursor: pointer;
- 	padding: 1vw;
- 	height: 8vw;
+	padding: 1vw;
+	height: 8vw;
 }
-#show-suggestions .card-title
-{
- 	font-size: 1.5vw;
- 	margin-top: -25px;
- 	margin-left: -10px;
+
+#show-suggestions .card-title {
+	font-size: 1.5vw;
+	margin-top: -25px;
+	margin-left: -10px;
 }
-#show-suggestions .btn
-{
+
+#show-suggestions .btn {
 	color: white;
 	margin-left: 25%;
 	width: 4vw;
@@ -236,12 +238,12 @@ body
 	margin-top: -10px;
 	transition: 0.5s;
 }
-#show-suggestions .btn:hover
-{
-	background-color:#2874A6;
+
+#show-suggestions .btn:hover {
+	background-color: #2874A6;
 }
-#show-suggestions .card-body p
-{
+
+#show-suggestions .card-body p {
 	margin-top: -10px;
 	font-size: 0.8vw;
 	margin-left: -8px;
@@ -249,18 +251,87 @@ body
 }
 
 
+.notification-body-top {
+	padding: 0.8vw;
+	font-size: 1.2vw;
+}
+
+#notif-top{
+	display: none;
+}
 /*Universal Css Ends*/
 
 
 /*Desktop View Starts*/
 
-@media only screen and (min-width: 992px) 
-{
-	#show-suggestions
-	{
+@media only screen and (min-width: 992px) {
+	#show-suggestions {
 		display: none;
-	}	
+	}
 }
+
+/*-----NOTIFICATION CSS-----*/
+
+.notification-body {
+	padding: 0.8vw;
+	font-size: 1.2vw;
+}
+
+.notification-title {
+	font-size: 1.8vw;
+}
+
+.notification-list,
+.n-user-list {
+	list-style: outside none none;
+	margin: 0;
+	padding: 0;
+}
+
+.notification-list>li {
+	border-bottom: 1px solid rgb(175, 164, 164);
+	margin-bottom: 0.5vw;
+	padding: 0.5vw 0;
+}
+
+.notification-list .cat-icon {
+	width: 1.5vw;
+	margin: 0.5vw;
+	margin-right: 0.8vw;
+}
+
+.notification-list .avatar {
+	width: 2vw;
+}
+
+.rounded {
+	border-radius: 0.25rem;
+}
+
+.n-user-list {
+	margin-bottom: 0.5vw;
+}
+
+.n-user-list:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+.n-user-list li {
+	float: left;
+}
+
+.n-user-list li+li {
+	margin-left: 0.3vw;
+}
+
+.n-user-list li a,
+.n-user-list li a:hover {
+	text-decoration: none;
+}
+
+/*-----NOTIFICATION CSS ENDS-----*/
 
 /*Desktop View Ends*/
 
@@ -269,43 +340,41 @@ body
 
 /*Mobile View Starts*/
 
-@media only screen and (max-width: 992px) 
-{
-	#show-suggestions #cards 
-	{
-	  display: flex;
-	  min-height: 130px;
-	  min-width: 71vw;
-	  overflow-x: auto; 
-	  padding-bottom: 1vw;
+@media only screen and (max-width: 992px) {
+	#show-suggestions #cards {
+		display: flex;
+		min-height: 130px;
+		min-width: 71vw;
+		overflow-x: auto;
+		padding-bottom: 1vw;
 	}
-	#show-suggestions
-	{
+
+	#show-suggestions {
 		padding-top: 1vw;
-	 	padding-bottom: 1vw; 
+		padding-bottom: 1vw;
 		min-width: 80vw;
 	}
-	#card--content 
-	{
-	  background-color:  #D0D3D4;
-	  min-width: 100px;
-	  margin-right: 5px;
-	  margin-left: 5px;
-	  border-radius: 2vw;
+
+	#card--content {
+		background-color: #D0D3D4;
+		min-width: 100px;
+		margin-right: 5px;
+		margin-left: 5px;
+		border-radius: 2vw;
 	}
-	#show-suggestions img
-	{
-	 	padding: 10px;
-	 	height: 70px;
+
+	#show-suggestions img {
+		padding: 10px;
+		height: 70px;
 	}
-	#show-suggestions .card-title
-	{
-	 	font-size:15px;
-	 	margin-top: -25px;
-	 	margin-left: -10px;
+
+	#show-suggestions .card-title {
+		font-size: 15px;
+		margin-top: -25px;
+		margin-left: -10px;
 	}
-	#show-suggestions .btn
-	{
+
+	#show-suggestions .btn {
 		margin-left: 10px;
 		width: 40px;
 		height: 40px;
@@ -313,30 +382,30 @@ body
 		border-radius: 25px;
 		margin-top: -10px;
 	}
-	#show-suggestions .card-body p
-	{
+
+	#show-suggestions .card-body p {
 		margin-top: -10px;
 		font-size: 8px;
 	}
-    #left
-	{
+
+	#left {
 		display: none;
 	}
-	#center
-	{
+
+	#center {
 		left: -20vw;
 	}
-	#right
-	{
+
+	#right {
 		display: none;
 	}
-	.navbar-brand
-	{	
+
+	.navbar-brand {
 		top: 1vw;
-		font-size:23px;
+		font-size: 23px;
 	}
-    .card 
-    {
+
+	.card {
 		background: #fff;
 		box-shadow: 0.8vw 0.3vw 0.8vw #888888;
 		padding: 20px;
@@ -344,43 +413,54 @@ body
 		box-sizing: border-box;
 		border-radius: 10px;
 		margin-top: 7%;
-		width:80vw;
+		width: 80vw;
 		padding-bottom: 2px;
 	}
-	.card-head img 
-	{
+
+	.card-head img {
 		height: 20px;
 		width: 20px;
 		margin-bottom: 5px;
 		margin-left: -15px;
 	}
-	#username
-	{
+
+	#username {
 		font-size: 15px;
 		margin-left: -25px;
 	}
-	.up-section 
-	{
+
+	.up-section {
 		margin-left: -30px;
 		margin-top: -15px;
 	}
-	.up-section i 
-	{
+
+	.up-section i {
 		font-size: 3vw;
 		margin-right: -10px;
 	}
-	.bottom-section 
-	{		
+
+	.bottom-section {
 		margin-left: -15px;
 		font-size: 2.5vw;
 	}
-	.timeadd 
-	{
-		font-size:2vw;
+
+	.timeadd {
+		font-size: 2vw;
 	}
-	.addcoment textarea 
-	{
-		padding-bottom:
+
+	.addcoment textarea {
+		padding-bottom: ;
+	}
+
+	.notification-list>li {
+		border-bottom: 1px solid rgb(175, 164, 164);
+		margin-bottom: 0.5vw;
+		padding: 0.3vw 0;
+	}
+
+	.notification-body {
+		padding: 0.5vw;
+		font-size: 1.5vw;
 	}
 }
 
