@@ -1,3 +1,6 @@
+/*Universal Css Starts*/
+
+
 *
 {
 	margin: 0;
@@ -136,6 +139,11 @@ body
 {
 	font-weight: normal;	
 }
+.usercoment .fas
+{
+ margin-left: 4vw;
+
+}
 
 .morecoment a 
 {
@@ -179,3 +187,201 @@ body
 	font-size: 1.5vw;
 }
 
+#show-suggestions #cards {
+  display: flex;
+  min-height: 15vw;
+  overflow-x: auto; 
+}
+
+#cards::-webkit-scrollbar {
+  display: none;
+}
+
+#card--content {
+  background-color:  #D0D3D4;
+  min-width: 10vw;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 2vw;
+}
+#show-suggestions
+{
+	padding-top: 1vw;
+ 	padding-bottom: 1vw; 
+	background:#ECF0F1;
+}
+#show-suggestions img
+{
+	cursor: pointer;
+ 	padding: 1vw;
+ 	height: 8vw;
+}
+#show-suggestions .card-title
+{
+ 	font-size: 1.5vw;
+ 	margin-top: -25px;
+ 	margin-left: -10px;
+}
+#show-suggestions .btn
+{
+	color: white;
+	margin-left: 25%;
+	width: 4vw;
+	height: 4vw;
+	background-color: #31B0D5;
+	outline: none;
+	font-size: 1.5vw;
+	border-radius: 25px;
+	padding: 1vw;
+	margin-top: -10px;
+	transition: 0.5s;
+}
+#show-suggestions .btn:hover
+{
+	background-color:#2874A6;
+}
+#show-suggestions .card-body p
+{
+	margin-top: -10px;
+	font-size: 0.8vw;
+	margin-left: -8px;
+	font-weight: lighter;
+}
+
+
+/*Universal Css Ends*/
+
+
+/*Desktop View Starts*/
+
+@media only screen and (min-width: 992px) 
+{
+	#show-suggestions
+	{
+		display: none;
+	}	
+}
+
+/*Desktop View Ends*/
+
+
+
+
+/*Mobile View Starts*/
+
+@media only screen and (max-width: 992px) 
+{
+	#show-suggestions #cards 
+	{
+	  display: flex;
+	  min-height: 130px;
+	  min-width: 71vw;
+	  overflow-x: auto; 
+	  padding-bottom: 1vw;
+	}
+	#show-suggestions
+	{
+		padding-top: 1vw;
+	 	padding-bottom: 1vw; 
+		min-width: 80vw;
+	}
+	#card--content 
+	{
+	  background-color:  #D0D3D4;
+	  min-width: 100px;
+	  margin-right: 5px;
+	  margin-left: 5px;
+	  border-radius: 2vw;
+	}
+	#show-suggestions img
+	{
+	 	padding: 10px;
+	 	height: 70px;
+	}
+	#show-suggestions .card-title
+	{
+	 	font-size:15px;
+	 	margin-top: -25px;
+	 	margin-left: -10px;
+	}
+	#show-suggestions .btn
+	{
+		margin-left: 10px;
+		width: 40px;
+		height: 40px;
+		font-size: 15px;
+		border-radius: 25px;
+		margin-top: -10px;
+	}
+	#show-suggestions .card-body p
+	{
+		margin-top: -10px;
+		font-size: 8px;
+	}
+    #left
+	{
+		display: none;
+	}
+	#center
+	{
+		left: -20vw;
+	}
+	#right
+	{
+		display: none;
+	}
+	.navbar-brand
+	{	
+		top: 1vw;
+		font-size:23px;
+	}
+    .card 
+    {
+		background: #fff;
+		box-shadow: 0.8vw 0.3vw 0.8vw #888888;
+		padding: 20px;
+		padding-top: 10px;
+		box-sizing: border-box;
+		border-radius: 10px;
+		margin-top: 7%;
+		width:80vw;
+		padding-bottom: 2px;
+	}
+	.card-head img 
+	{
+		height: 20px;
+		width: 20px;
+		margin-bottom: 5px;
+		margin-left: -15px;
+	}
+	#username
+	{
+		font-size: 15px;
+		margin-left: -25px;
+	}
+	.up-section 
+	{
+		margin-left: -30px;
+		margin-top: -15px;
+	}
+	.up-section i 
+	{
+		font-size: 3vw;
+		margin-right: -10px;
+	}
+	.bottom-section 
+	{		
+		margin-left: -15px;
+		font-size: 2.5vw;
+	}
+	.timeadd 
+	{
+		font-size:2vw;
+	}
+	.addcoment textarea 
+	{
+		padding-bottom:
+	}
+}
+
+/*Mobile View Ends*/
