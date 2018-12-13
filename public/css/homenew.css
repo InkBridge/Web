@@ -4,18 +4,22 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-	background: #fafafa;
+	background: white;
+}
+
+img.navicons{
+	display: inline-block;
 }
 
 .navbar {
-	background-color: #979A9A !important;
+	background-image: linear-gradient(rgb(44, 44, 44), white) !important;
 }
 
-#notification {
-	margin-right: 16vw;
+#notifbell {
 	display: none;
 }
 
@@ -23,10 +27,6 @@ body {
 	-webkit-text-stroke-width: 2px;
 	color: #F4D03F;
 	-webkit-text-stroke-color: black;
-}
-
-#people {
-	margin-right: 5vw;
 }
 
 .nav-item i {
@@ -38,7 +38,6 @@ body {
 }
 
 .navbar-brand {
-	font-family: 'Arizonia', cursive;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-fill-color: black;
 	-webkit-text-stroke-color: black;
@@ -46,7 +45,8 @@ body {
 }
 
 #welcome {
-	font-family: 'Amarante', cursive;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-color: white;
 }
 
 #left,
@@ -179,11 +179,6 @@ body {
 	color: black;
 }
 
-#logo {
-	width: 20vw;
-	height: 20vw;
-}
-
 .quotes {
 	font-family: 'Amarante', cursive;
 	font-size: 1.5vw;
@@ -255,7 +250,53 @@ body {
 	display: none;
 }
 
+#searchfield{
+	border: none;
+	border-radius: 0px;
+	margin: none;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	margin-left: 33vw;
+}
 
+#searchfield:focus{
+	outline: none !important;
+	box-shadow: none !important;
+	border: none;
+}
+
+#searchbutton{
+	height: 38px;
+	background-color: white;
+	border-radius: 0px;
+	margin: none;
+	outline: none;
+	border: none;
+	display: inline;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+#searchbutton:active{
+	outline: none !important;
+	box-shadow: none !important;
+	border: none !important;
+}
+
+p.qnltext{
+	display: inline;
+	color: white;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 18px;
+}
+
+p#navname{
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-decoration: none;
+	text-shadow: none;
+	display: inline;
+	margin-left: 0.2px;
+}
 /*Universal Css Ends*/
 
 
@@ -335,6 +376,12 @@ body {
 	}
 
 	/*-----NOTIFICATION CSS ENDS-----*/
+
+	img.navicons{
+		width: 30px;
+		height: 30px;
+		margin-left: 6px;
+	}
 }
 
 /*Desktop View Ends*/
@@ -342,6 +389,35 @@ body {
 /*Mobile View Starts*/
 
 @media only screen and (max-width: 992px) {
+
+	#searchfield{
+		width: 46vw;
+		display: inline;
+		margin-left: -8vw;
+	}
+
+	img.navicons{
+		margin: -5px;
+		width: 23px;
+		height: 23px;
+		margin-left: 0px;
+	}
+
+	#togglerbutton{
+		float: right;
+		padding: 0;
+		border: none;
+	}
+	
+	#togglerbutton:focus{
+		outline: none !important;
+	}
+
+	#notifbell{
+		display: inline-block;
+		float: right;
+	}
+
 	#show-suggestions #cards {
 		display: flex;
 		min-height: 130px;
@@ -531,7 +607,14 @@ body {
 		height: 250px;
 		overflow-y: scroll;
 	}
+	
+	li.nav-item{
+		display: inline;
+	}
 
+	li#notification.nav-item{
+		display: inline;
+	}
 	/*-----NOTIFICATION CSS ENDS-----*/
 }
 
