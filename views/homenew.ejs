@@ -10,6 +10,8 @@
   <link rel="stylesheet" type="text/css" href="/css/homenew.css">
   <link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amarante" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" crossorigin="anonymous">
 </head>
 
@@ -20,25 +22,35 @@
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
     <a class="navbar-brand" id="brand" href="#">
       <img src="/Images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
-      Welcome To InkBridge
     </a>
+    <form class="form-inline">
+      <input class="form-control" type="text" id="searchfield" placeholder="Search">
+      <button class="btn btn-dark" id="searchbutton" type="submit"><i class="fas fa-search" style="color:black;"></i></button>
+    </form>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
-      aria-expanded="false" aria-label="Toggle navigation">
+      aria-expanded="false" aria-label="Toggle navigation" id="togglerbutton">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item" id="people">
-          <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
-        </li>
-        <li class="nav-item" id="notification">
-          <a class="nav-link" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fas fa-bell"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="navbar-brand" href="#" id="welcome">
-            Welcome @Raied Razi
-            <img src="/Images/cardicon.png" width="40" height="40" class="d-inline-block align-top" alt="">
-          </a>
+          <li class="nav-item">
+              <a class="navbar-brand" href="#" id="welcome">
+                <p id="navname">Raied Razi</p>
+                <img src="/Images/cardicon.png" width="40" height="40" class="d-inline-block align-top" alt="">
+              </a>
+              <a><img src="/Images/Quill.png" class="navicons">
+                <p style="display: inline; color: white;">:</p>
+                <p class="qnltext">10</p>
+              </a>
+              <a><img src="/Images/Pen.png" class="navicons">
+                <p style="display: inline; color: white;">:</p>
+                <p class="qnltext">2</p>
+              </a>
+              <a><img src="/Images/Level.png" class="navicons">
+                <p style="display: inline; color: white;">:</p>
+                <p class="qnltext">2</p>
+              </a>
+          <a class="nav-link" href="#" data-toggle="modal" data-target=".bd-example-modal-lg" id="notifbell"><i class="fas fa-bell" style="width: 12px;"></i></a>
         </li>
       </ul>
     </div>
