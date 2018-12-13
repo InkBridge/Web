@@ -403,6 +403,11 @@ p#navname{
 		margin-left: 0px;
 	}
 
+	#bellicon{
+		margin-top: 3px; 
+		margin-right: 4px;
+	}
+
 	#togglerbutton{
 		float: right;
 		padding: 0;
