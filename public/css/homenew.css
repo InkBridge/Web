@@ -251,11 +251,6 @@ body {
 }
 
 
-.notification-body-top {
-	padding: 0.8vw;
-	font-size: 1.2vw;
-}
-
 #notif-top {
 	display: none;
 }
@@ -276,6 +271,15 @@ body {
 		font-size: 1.2vw;
 	}
 
+	.notifications{
+		height: 18vw;
+		overflow: scroll;
+		-ms-overflow-style: none;
+		-moz-overflow-style: none;
+	}
+	.notifications::-webkit-scrollbar { 
+			display: none; 	
+		}
 	.notification-title {
 		font-size: 1.8vw;
 	}
@@ -334,12 +338,6 @@ body {
 }
 
 /*Desktop View Ends*/
-
-
-
-
-
-
 
 /*Mobile View Starts*/
 
@@ -452,7 +450,7 @@ body {
 	}
 
 	.addcoment textarea {
-		padding-bottom: ;
+		padding-bottom: 0px;
 	}
 
 	.notification-list>li {
