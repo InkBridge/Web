@@ -20,17 +20,25 @@ mongoose.connect("mongodb://InkBridge:iSXvGThVEsF9BgS@ds113136.mlab.com:13136/an
 function escapeRegex(text) {
     return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
 }
+
 app.get("/", (req, res) => {
     res.render("welcome");
 });
+
 app.get("/writersignup", (req, res) => {
     res.render("wsignup");
 });
+
 app.get("/home", (req, res) => {
     res.render("home");
 });
+
 app.get("/homenew", (req, res) => {
     res.render("homenew");
+});
+
+app.get("/readersignup", (req, res) => {
+    res.render("rsignup");
 });
 app.get("/tag", (req, res) => {
     if (req.query.search) {
