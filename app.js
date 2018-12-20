@@ -29,6 +29,10 @@ app.get("/writersignup", (req, res) => {
     res.render("wsignup");
 });
 
+app.get("/readersignup", (req, res) => {
+    res.render("rsignup");
+});
+
 app.get("/home", (req, res) => {
     res.render("home");
 });
