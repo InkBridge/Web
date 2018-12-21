@@ -251,6 +251,8 @@ img.navicons{
 }
 
 #searchfield{
+	display: inline;
+	width: 21vw;
 	border: none;
 	border-radius: 0px;
 	margin: none;

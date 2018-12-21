@@ -5,7 +5,9 @@ function check() {
     var password1 = document.getElementById("password1").value;
     if (password1 == (password)) {
         return true;
-    } else {
+    }
+    
+    else {
         alert("Passwords didn't match");
         return false;
     }
@@ -34,9 +36,8 @@ function fillcheck() {
 }
 
 function showafter() {
-    document.getElementById('right').style.height = "100%";
-    document.getElementById("right").style.borderLeft = "none";
-    document.getElementById("LogoAndQuotes").style.borderRight = "2px solid #000000";
+    document.getElementById('mainform').style.marginTop = "30px";
+    document.getElementById('mainform').style.marginBottom = "30px";
     document.getElementById('next').style.display = "none";
     document.getElementById('after').style.display = "block";
     document.getElementById('extraquotes').style.display = "block";
@@ -46,7 +47,7 @@ function addgenre() {
     genreval = document.getElementById("select_id").value;
 
     var buttonadd = document.createElement("button");
-    var name = "btn btn-danger marg";
+    var name = "btn btn-danger marg hashbutton";
     var arr = buttonadd.className.split(" ");
     if (arr.indexOf(name) == -1) {
         buttonadd.className += " " + name;
