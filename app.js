@@ -33,6 +33,15 @@ app.get("/readersignup", (req, res) => {
     res.render("rsignup");
 });
 
+
+app.get("/login", (req, res) => {
+    res.render("Login");
+});
+
+app.get("/forgotpw", (req, res) => {
+    res.render("ForgotPassword");
+});
+
 app.get("/home", (req, res) => {
     res.render("home");
 });
