@@ -13,6 +13,12 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" crossorigin="anonymous">
+  <style>
+    .example-open .modal-backdrop {
+      background-color: rgba(0,0,0,0.5);
+      }
+    .modal .modal-dialog .modal-content{  background-color: rgba(255,255,255,0.2);border-radius:50%;box-shadow: 5px 3px 18px white;}
+  </style>
 </head>
 
 <body>
@@ -33,28 +39,30 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-              <a class="navbar-brand" href="#" id="welcome">
-                <p id="navname">Raied Razi</p>
-                <img src="/Images/cardicon.png" width="40" height="40" class="d-inline-block align-top" alt="">
-              </a>
-              <a><img src="/Images/Quill.png" class="navicons">
-                <p style="display: inline; color: white;">:</p>
-                <p class="qnltext">10</p>
-              </a>
-              <a><img src="/Images/Pen.png" class="navicons">
-                <p style="display: inline; color: white;">:</p>
-                <p class="qnltext">2</p>
-              </a>
-              <a><img src="/Images/Level.png" class="navicons">
-                <p style="display: inline; color: white;">:</p>
-                <p class="qnltext">2</p>
-              </a>
-              <a class="nav-link" href="#" data-toggle="modal" data-target=".bd-example-modal-lg" id="notifbell">
-                <img src="/Images/Bell.png" class="navicons" id="bellicon">
-                <span id="unreadnotif" style="display: inline-block; background-color:black; border-radius: 10px; height: 18px; min-width: 10.7px;"><span><p id="unreadnotiftext" style="font-weight: 500; text-align: center; padding-left: 4px; padding-right:4px; color: white; font-size: 11px;">12</p></span>
-              </a>
-            </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="#" id="welcome">
+            <p id="navname">Raied Razi</p>
+            <img src="/Images/cardicon.png" width="40" height="40" class="d-inline-block align-top" alt="">
+          </a>
+          <a><img src="/Images/Quill.png" class="navicons">
+            <p style="display: inline; color: white;">:</p>
+            <p class="qnltext">10</p>
+          </a>
+          <a><img src="/Images/Pen.png" class="navicons">
+            <p style="display: inline; color: white;">:</p>
+            <p class="qnltext">2</p>
+          </a>
+          <a><img src="/Images/Level.png" class="navicons">
+            <p style="display: inline; color: white;">:</p>
+            <p class="qnltext">2</p>
+          </a>
+          <a class="nav-link" href="#" data-toggle="modal" data-target=".bd-example-modal-lg" id="notifbell">
+            <img src="/Images/Bell.png" class="navicons" id="bellicon">
+            <span id="unreadnotif" style="display: inline-block; background-color:black; border-radius: 10px; height: 18px; min-width: 10.7px;"><span>
+                <p id="unreadnotiftext" style="font-weight: 500; text-align: center; padding-left: 4px; padding-right:4px; color: white; font-size: 11px;">12</p>
+              </span>
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -66,12 +74,50 @@
     <div class="row">
       <div class="col-3" style="background: #ECF0F1;" id="left">
         <!--Start left part-->
-
+        <div id="insideleft">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia non nulla maxime optio blanditiis voluptas
+          unde, explicabo dicta voluptate autem repudiandae itaque voluptatum provident sit perferendis modi enim quo
+          aliquam.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptates quo, commodi delectus labore quis
+          fugiat dolor et architecto odio, placeat explicabo facere harum suscipit cum magnam, nesciunt laborum
+          molestias?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat blanditiis ex quasi. Nobis
+          odit eum similique deserunt quia magnam quis porro nulla fugit debitis, repellendus ducimus suscipit, alias
+          saepe!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, est officiis. Mollitia ad sit repellat sint
+          commodi suscipit animi, iure non debitis eum, repudiandae unde veniam eaque deserunt, odit ipsa!Loremlor
+        </div>
         <!--End left part-->
       </div>
       <div class="col-6" id="center">
 
         <!--Start center page-->
+
+        <!---Add content button starts-->
+        <button class="btn btn-primary addcnt" data-toggle="modal" data-target="#myModal"><i class="fa fa-feather"></i></button>
+        <div class="containeraddcnt">
+
+          <!-- The Modal -->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-sm" style="margin-top:23%;margin-left:60%;">
+              <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                  <div class="row" style="padding-left:40px;">
+                    <button class="btn btn-danger wtUpBox">Poetry</button>
+                    <button class="btn btn-danger wtUpBox">Stories</button>
+                  </div>
+                  <div class="row" style="padding-left:40px;">
+                    <button class="btn btn-danger wtUpBox">Shayaris</button>
+                    <button class="btn btn-danger wtUpBox">Blah</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
 
 
         <div class="card mb-3" id="stories" style="margin-top: 0">
@@ -575,6 +621,12 @@
     console.log("dd");
     $(this).toggleClass("like disliked");
   });
+
+  $('#myModal').on('show.bs.modal', function (e) {
+    $('body').addClass("example-open");
+  }).on('hide.bs.modal', function (e) {
+    $('body').removeClass("example-open");
+  })
 </script>
 
 <!--Script Ends-->
