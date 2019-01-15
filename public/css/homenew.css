@@ -10,7 +10,9 @@
 body {
 	background: white;
 }
-
+body::-webkit-scrollbar {
+	display: none;
+}
 img.navicons {
 	display: inline-block;
 }
