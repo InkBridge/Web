@@ -327,12 +327,14 @@ p#navname {
 	/*-----NOTIFICATION CSS-----*/
 
 	.notification-body {
+		background-color: white;
+		border-radius: 0.5vw;
 		padding: 0.8vw;
 		font-size: 1.2vw;
 	}
 
 	.notifications {
-		height: 18vw;
+		height: 16vw;
 		overflow: scroll;
 		-ms-overflow-style: none;
 		-moz-overflow-style: none;
@@ -343,6 +345,7 @@ p#navname {
 	}
 
 	.notification-title {
+		padding-top: 1vw;
 		font-size: 1.8vw;
 	}
 
@@ -358,7 +361,11 @@ p#navname {
 		margin-bottom: 0.5vw;
 		padding: 0.5vw 0;
 	}
-
+	.notification-list>li:hover
+	{
+		background-color:#ECF0F1;
+		cursor: pointer;
+	}
 	.notification-list .cat-icon {
 		width: 1.5vw;
 		margin: 0.5vw;
@@ -403,6 +410,95 @@ p#navname {
 		height: 30px;
 		margin-left: 6px;
 	}
+
+	/*-----CONSIGNMENT CSS STARTS-----*/
+
+	.consignment-title
+	{
+		padding-top: 1vw;
+		font-size: 1.8vw;
+	}
+	.consignment-body {
+		background-color: white;
+		border-radius: 0.5vw;
+		padding: 0.8vw;
+		font-size: 1.2vw;
+	}
+
+	.consignment {
+		height: 12vw;
+		overflow: scroll;
+		-ms-overflow-style: none;
+		-moz-overflow-style: none;
+	}
+
+	.consignment::-webkit-scrollbar {
+		display: none;
+	}
+	.consignment-list,
+	.user {
+		list-style: outside none none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.consignment-list>li {
+		display: block;
+		border-bottom: 1px solid rgb(175, 164, 164);
+		margin-bottom: 0.5vw;
+		padding: 0.5vw 0;
+	}
+	.consignment-list .far {
+		font-size: 20px;
+		margin: 0.5vw;
+		color: black;
+		margin-right: 0.8vw;
+	}
+
+	.consignment-list .avatar {
+		width: 2vw;
+	}
+	.consignment-list .accept
+	{
+		color: white;
+		margin-left: 10%;
+		margin-right: 10%;
+		background-color:#3498DB ;
+		outline: none;
+		border-radius: 0.5vw;
+		font-size: 1vw;
+		padding: 0.5vw;
+		margin-top: -10px;
+		transition: 0.5s;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+	.consignment-list .ignore
+	{
+		color: white;
+		background-color:#CD6155 ;
+		outline: none;
+		border-radius: 0.5vw;
+		font-size: 1vw;
+		padding: 0.5vw;
+		margin-top: -10px;
+		transition: 0.5s;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+	.consignment-list .accept:hover
+	{
+		cursor: pointer;
+		background-color:#2874A6 ;#C0392B  
+	}
+	.consignment-list .ignore:hover
+	{
+		cursor: pointer;
+		background-color:#C0392B;
+	}
+
+	/*-----CONSIGNMENT CSS ENDS-----*/
+
 
 	/*-------ADD CONTENT BUTTON STARTS-----*/
 
