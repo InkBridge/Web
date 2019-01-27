@@ -9,3 +9,9 @@ function addfocus(clicked_id)
         e.style.display = 'none';
     document.getElementById(clicked_id+"F").focus();
 }
+function remove(n)
+{
+	var elem = document.getElementById('consign'+n);
+    elem.parentNode.removeChild(elem);
+    return false;
+}
