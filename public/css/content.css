@@ -18,16 +18,17 @@ input#title.form-control:focus {
     box-shadow: none;
 }
 
-textarea#content-body.form-control {
+#content-body.form-control {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border: none;
     height: 330px;
+    overflow: scroll;
 }
 
-textarea#content-body.form-control:focus {
+#content-body.form-control:focus {
     box-shadow: none;
 }
 
