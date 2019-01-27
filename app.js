@@ -53,6 +53,12 @@ app.get("/homenew", (req, res) => {
 app.get("/readersignup", (req, res) => {
     res.render("rsignup");
 });
+
+app.get("/content", (req, res) => {
+    res.render("content");
+});
+
+
 app.get("/tag", (req, res) => {
     if (req.query.search) {
         const regex = new RegExp(escapeRegex(req.query.search), 'gi');
