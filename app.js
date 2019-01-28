@@ -58,6 +58,11 @@ app.get("/content", (req, res) => {
     res.render("content");
 });
 
+app.get("/profile", (req, res) => {
+    res.render("profile");
+});
+
+
 
 app.get("/tag", (req, res) => {
     if (req.query.search) {

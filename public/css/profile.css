@@ -1,0 +1,116 @@
+/*Universal Css Starts*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background:#ECF0F1;
+}
+
+.prof_page
+{
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top:5%;
+}
+
+#prof_img
+{
+	height: 12vw;
+	width: 12vw;
+	border-radius: 50%;
+}
+
+#prof_stat
+{
+	margin-left: 5vw;
+}
+
+#prof_stat #top
+{
+	font-size: 1.5vw;
+}
+
+#prof_stat #bottom
+{
+	margin-top: 1.5vw;
+	font-size: 2vw;
+}
+
+#usr_name
+{
+	font-weight: 300;
+	font-size: 28px;
+}
+
+#flws,#flwng,#pens
+{
+	padding-right: 2vw;
+}
+
+#usr_flws,#usr_flwng,#usr_artc,#usr_pens,#usr_quils
+{
+	font-weight: bold;
+}
+
+#tabs
+{
+	font-weight: bold;
+}
+#tabs a
+{
+	font-size: 2vw;
+	color: #7B7D7D ;
+	cursor: pointer;
+}
+#tabs a:hover
+{
+	color: #ECF0F1;
+	background:#B3B6B7;
+}
+.container .row
+{
+	margin-top: 2vw;
+}
+.container .card
+{
+	background:#ECF0F1; 
+	border: none;
+}
+.card-img-top {
+    width: 100%;
+    height: 22vw;
+    object-fit: cover;
+}
+
+
+
+
+/*Universal Css Ends*/
+
+
+/*Desktop View Starts*/
+
+@media only screen and (min-width: 992px) 
+{
+
+
+	
+}
+
+/*Desktop View Ends*/
+
+/*Mobile View Starts*/
+
+@media only screen and (max-width: 992px) 
+{
+
+	
+	
+}
+
+/*Mobile View Ends*/
