@@ -1,9 +1,23 @@
 var news=document.getElementById("news_feed");
 var posts=document.getElementById("posts");
 var drafts=document.getElementById("drafts");
-function Switch(op)
+
+var news_btn=document.getElementById("news_btn");
+var posts_btn=document.getElementById("post_btn");
+var drafts_btn=document.getElementById("draft_btn");
+
+function Switch(op,e)
 {
+
+	news_btn.style.backgroundColor='white';
+	post_btn.style.backgroundColor='white';
+	draft_btn.style.backgroundColor='white';
+
 	var a=op;
+	//changing the colour of clicked button
+	var x=document.getElementById(e);
+	x.style.backgroundColor='black';
+
 	if(a==1)
 	{
 		news.style.display = "block";
