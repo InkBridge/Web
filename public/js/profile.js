@@ -9,14 +9,14 @@ var drafts_btn=document.getElementById("draft_btn");
 function Switch(op,e)
 {
 
-	news_btn.style.backgroundColor='white';
-	post_btn.style.backgroundColor='white';
-	draft_btn.style.backgroundColor='white';
-
+	news_btn.style.backgroundColor='#ECF0F1';
+	post_btn.style.backgroundColor='#ECF0F1';
+	draft_btn.style.backgroundColor='#ECF0F1';
+	
 	var a=op;
 	//changing the colour of clicked button
 	var x=document.getElementById(e);
-	x.style.backgroundColor='black';
+	x.style.backgroundColor='#B3B6B7';
 
 	if(a==1)
 	{

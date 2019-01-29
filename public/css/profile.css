@@ -67,11 +67,6 @@ body {
 	color: #7B7D7D ;
 	cursor: pointer;
 }
-#tabs a:hover
-{
-	color: #ECF0F1;
-	background:#B3B6B7;
-}
 .container .row
 {
 	margin-top: 2vw;
