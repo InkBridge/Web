@@ -37,3 +37,13 @@ function Switch(op,e)
 		drafts.style.display = "block";
 	}
 }
+
+hover_out(){
+	document.getElementById('tags1').style.display = 'none';
+	document.getElementById('content1').style.opacity = '1';
+}
+
+hover_in(){
+	document.getElementById('tags1').style.display = 'block';
+	document.getElementById('content1').style.opacity = '0.4';
+}
