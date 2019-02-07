@@ -38,12 +38,14 @@ function Switch(op,e)
 	}
 }
 
-hover_out(){
+hover_out() 
+{
 	document.getElementById('tags1').style.display = 'none';
 	document.getElementById('content1').style.opacity = '1';
 }
 
-hover_in(){
+hover_in() 
+{
 	document.getElementById('tags1').style.display = 'block';
 	document.getElementById('content1').style.opacity = '0.4';
 }
