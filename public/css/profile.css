@@ -40,7 +40,9 @@ body {
 	margin-top: 1.5vw;
 	font-size: 2vw;
 }
-
+#pens,#quils{
+	width:5%;
+}
 #usr_name
 {
 	font-weight: 300;
@@ -67,7 +69,7 @@ body {
 	color: #7B7D7D ;
 	cursor: pointer;
 }
-.container .row
+.container
 {
 	margin-top: 2vw;
 }
@@ -82,14 +84,6 @@ body {
 	object-fit: cover;
 	cursor: pointer;
 }
-
-/*Universal Css Ends*/
-
-
-/*Desktop View Starts*/
-
-@media only screen and (min-width: 992px) 
-{
 
 #tags1{
 	font-weight: 700;
@@ -116,6 +110,14 @@ body {
 	display: inline;
 }
 
+/*Universal Css Ends*/
+
+
+/*Desktop View Starts*/
+
+@media only screen and (min-width: 992px) 
+{
+
 }
 
 /*Desktop View Ends*/
@@ -125,7 +127,24 @@ body {
 @media only screen and (max-width: 992px) 
 {
 
-	
+	.container .card
+	{
+		background:#ECF0F1; 
+		border: none;
+	}
+	.card{
+		width: 33.33%;
+		float :right;
+		padding:0.5vw;
+	}
+	.card-img-top 
+	{
+    	width: 100%;
+    	height: 22vw;
+		object-fit: cover;
+		cursor: pointer;
+		float :right;
+	}
 	
 }
 

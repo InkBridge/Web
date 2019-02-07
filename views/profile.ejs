@@ -39,7 +39,7 @@
     
     <div class="row" id="tabs">
       <div class="col text-center"><a class="btn-floating btn-lg" id="news_btn" onclick="Switch(1,this.id);">NEWS-FEED</a></div>  
-      <div class="col text-center"><a class="btn-floating btn-lg" id="post_btn" onclick="Switch(2,this.id);">POSTS</a></div>
+      <div class="col text-center" style="padding-right: 0px;padding-left: 0px;"><a class="btn-floating btn-lg" id="post_btn" onclick="Switch(2,this.id);">POSTS</a></div>
       <div class="col text-center"><a class="btn-floating btn-lg" id="draft_btn" onclick="Switch(3,this.id);">DRAFTS <i class="fas fa-pen-square"></i></a></div>  
     </div>
 
@@ -49,7 +49,7 @@
     <!-- NEWS FEED Starts -->  
       <div class="container" id="news_feed">
         <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4  card" >
+          <div class="col-lg-4 col-md-4 col-sm-2  card" >
               <img src="/Images/p1.jpg" id="content1" class="card-img-top img-fluid" onmouseover="document.getElementById('tags1').style.display = 'block'; document.getElementById('content1').style.opacity = '0.4';" onmouseout="document.getElementById('tags1').style.display = 'none'; document.getElementById('content1').style.opacity = '1';" alt="...">
                 <div id="tags1" onmouseover="document.getElementById('tags1').style.display = 'block'; document.getElementById('content1').style.opacity = '0.4';" onmouseout="document.getElementById('tags1').style.display = 'none'; document.getElementById('content1').style.opacity = '1';" style="display: none; cursor: pointer;">
                   <span class="tagspan"><p class="tag" onmouseover="hover_in();" onmouseout="hover_out();">#love</p></span>
@@ -67,8 +67,6 @@
           <div class="col-lg-4 col-md-4 col-sm-4 card">
             <img src="/Images/p3.jpg" class="card-img-top img-fluid" alt="...">
           </div>
-        </div>
-        <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-4  card" >
             <img src="/Images/p4.jpg" class="card-img-top img-fluid" alt="...">
           </div>
@@ -82,7 +80,7 @@
     <!-- Posts Starts -->  
       <div class="container" id="posts" style="display: none;">
         <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4  card" >
+          <div class="col-lg-4 col-md-4 col-sm-2  card" >
             <img src="/Images/p5.jpg" class="card-img-top img-fluid" alt="...">
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 card">
