@@ -87,11 +87,11 @@ body {
     width: 100%;
     height: 22vw;
 	object-fit: cover;
-	cursor: pointer;
 }
 
 
 .content {
+	cursor: pointer;
 	position: relative;
 	max-width: 400px;
 	margin: auto;
