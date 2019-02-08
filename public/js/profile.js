@@ -6,6 +6,8 @@ var news_btn=document.getElementById("news_btn");
 var posts_btn=document.getElementById("post_btn");
 var drafts_btn=document.getElementById("draft_btn");
 
+news_btn.style.backgroundColor='black';
+
 function Switch(op,e)
 {
 
