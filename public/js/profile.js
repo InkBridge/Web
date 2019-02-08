@@ -16,7 +16,7 @@ function Switch(op,e)
 	var a=op;
 	//changing the colour of clicked button
 	var x=document.getElementById(e);
-	x.style.backgroundColor='#B3B6B7';
+	x.style.backgroundColor='black';
 
 	if(a==1)
 	{
