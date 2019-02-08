@@ -1,28 +1,22 @@
 var width = screen.width;
 
-var comments = document.querySelectorAll("#comment");
-for(var i = 0;i< sqaures.length;i++)
-{
-    //add click listeners to squares
-    sqaures[i].addEventListener("click",function(){
-        //grab color of the clicked sqaure 
-        var clickedColor = this.style.background;
+const comments = document.querySelectorAll("#comment");
+var commentsArea = document.querySelectorAll("#commentArea");
+var addComments = document.querySelectorAll("#commentPortion");
 
-        //compare color to pickedColor
-        if(clickedColor === pickedColor){
-            messageDisplay.textContent="Correct";
-        }
-        else
-        {   
-            this.style.background="#232323";
-            messageDisplay.textContent="Try Again";
-        }
-    });
-}
+comments.forEach(function (el, i) {
+    el.addEventListener('click', function (e) { 
 
-function remove(n)
-{
-	var elem = document.getElementById('consign'+n);
+            if (addComments[i].style.display == 'none')
+                addComments[i].style.display = 'block';
+            else if (addComments[i].style.display == 'block')
+                addComments[i].style.display = 'none';
+            commentsArea[i].focus();
+        });
+});
+
+function remove(n) {
+    var elem = document.getElementById('consign' + n);
     elem.parentNode.removeChild(elem);
     return false;
 }
