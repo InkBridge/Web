@@ -10,9 +10,11 @@
 body {
 	background: white;
 }
+
 body::-webkit-scrollbar {
 	display: none;
 }
+
 img.navicons {
 	display: inline-block;
 }
@@ -311,11 +313,25 @@ p#navname {
 	margin-left: 0.2px;
 }
 
-.wtUpBox{
-	margin: 5px;
-	height: 85px;
-	width: 85px;
+.wtUpBox {
+	margin: 0 auto;
+	height: 7vw;
+	width: 7vw;
+	font-size: 1vw;
 }
+
+.wtUpBox::-webkit-scrollbar {
+	display: none;
+}
+
+.contentcreation {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+	box-shadow: 5px 3px 18px white;
+	width: 60%;
+	margin: 0 auto;
+}
+
 /*Universal Css Ends*/
 
 
@@ -361,11 +377,12 @@ p#navname {
 		margin-bottom: 0.5vw;
 		padding: 0.5vw 0;
 	}
-	.notification-list>li:hover
-	{
-		background-color:#ECF0F1;
+
+	.notification-list>li:hover {
+		background-color: #ECF0F1;
 		cursor: pointer;
 	}
+
 	.notification-list .cat-icon {
 		width: 1.5vw;
 		margin: 0.5vw;
@@ -413,11 +430,11 @@ p#navname {
 
 	/*-----CONSIGNMENT CSS STARTS-----*/
 
-	.consignment-title
-	{
+	.consignment-title {
 		padding-top: 1vw;
 		font-size: 1.8vw;
 	}
+
 	.consignment-body {
 		background-color: white;
 		border-radius: 0.5vw;
@@ -435,6 +452,7 @@ p#navname {
 	.consignment::-webkit-scrollbar {
 		display: none;
 	}
+
 	.consignment-list,
 	.user {
 		list-style: outside none none;
@@ -448,6 +466,7 @@ p#navname {
 		margin-bottom: 0.5vw;
 		padding: 0.5vw 0;
 	}
+
 	.consignment-list .far {
 		font-size: 20px;
 		margin: 0.5vw;
@@ -458,12 +477,12 @@ p#navname {
 	.consignment-list .avatar {
 		width: 2vw;
 	}
-	.consignment-list .accept
-	{
+
+	.consignment-list .accept {
 		color: white;
 		margin-left: 10%;
 		margin-right: 10%;
-		background-color:#3498DB ;
+		background-color: #3498DB;
 		outline: none;
 		border-radius: 0.5vw;
 		font-size: 1vw;
@@ -473,10 +492,10 @@ p#navname {
 		font-weight: bold;
 		letter-spacing: 1px;
 	}
-	.consignment-list .ignore
-	{
+
+	.consignment-list .ignore {
 		color: white;
-		background-color:#CD6155 ;
+		background-color: #CD6155;
 		outline: none;
 		border-radius: 0.5vw;
 		font-size: 1vw;
@@ -486,15 +505,16 @@ p#navname {
 		font-weight: bold;
 		letter-spacing: 1px;
 	}
-	.consignment-list .accept:hover
-	{
+
+	.consignment-list .accept:hover {
 		cursor: pointer;
-		background-color:#2874A6 ;#C0392B  
+		background-color: #2874A6;
+		#C0392B
 	}
-	.consignment-list .ignore:hover
-	{
+
+	.consignment-list .ignore:hover {
 		cursor: pointer;
-		background-color:#C0392B;
+		background-color: #C0392B;
 	}
 
 	/*-----CONSIGNMENT CSS ENDS-----*/
@@ -528,6 +548,24 @@ p#navname {
 /*Mobile View Starts*/
 
 @media only screen and (max-width: 992px) {
+
+	.wtUpBox {
+		margin: 0 auto;
+		height: 15vw;
+		width: 15vw;
+		font-size: 3vw;
+	}
+
+	.contentcreation {
+		background-color: rgba(255, 255, 255, 0.2);
+		border-radius: 50%;
+		box-shadow: 5px 3px 18px white;
+		width: 50%;
+		margin: 0 auto;
+		width:200px;
+		height:200px;
+		padding-top:15px;
+	}
 
 	a#welcome.navbar-brand {
 		margin-right: 4px;

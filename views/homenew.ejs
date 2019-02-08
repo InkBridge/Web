@@ -17,7 +17,7 @@
     .example-open .modal-backdrop {
       background-color: rgba(0,0,0,0.8);
       }
-    .contentcreation{  background-color: rgba(255,255,255,0.2);border-radius:50%;box-shadow: 5px 3px 18px white;}
+    
   </style>
 </head>
 
@@ -102,12 +102,12 @@
               <div class="modal-content contentcreation">
                 <!-- Modal body -->
                 <div class="modal-body">
-                  <div class="row" style="padding:auto;">
+                  <div class="row" style="padding-top:5px; padding-bottom:5px;">
                     <button class="btn btn-danger wtUpBox">Poetry</button>
                     <button class="btn btn-danger wtUpBox">Stories</button>
                     <button class="btn btn-danger wtUpBox">Blogs</button>
                   </div>
-                  <div class="row" style="padding:auto;">
+                  <div class="row" style="padding-top:5px; padding-bottom:5px;">
                     <button class="btn btn-danger wtUpBox">Shayaris</button>
                     <button class="btn btn-danger wtUpBox">Blah</button>
                     <button class="btn btn-danger wtUpBox">Blah</button>
@@ -129,7 +129,7 @@
           <div class="card-body">
             <div class="up-section">
               <a class="btn-floating btn-lg btn-tw" id="like"><i class="fas fa-heart like disliked"></i></a>
-              <a class="btn-floating btn-lg btn-tw" id="comment1" onclick="addfocus(this.id);"><i class="far fa-comment"></i></a>
+              <a class="btn-floating btn-lg btn-tw" id="comment"><i class="far fa-comment"></i></a>
               <a class="btn-floating btn-lg btn-tw" id="share"><i class="far fa-paper-plane"></i></a>
               <a class="btn-floating btn-lg btn-tw" id="bookmark"><i class="fas fa-bookmark like disliked"></i></a><br>
             </div>
@@ -145,10 +145,10 @@
                 <span class="timeadd">9 hours ago</span>
               </div>
               <hr>
-              <div class="addcoment" id="comment1B" style="display:none;">
+              <div class="addcoment" style="display:none;">
                 <div class="md-form">
                   <form method="post">
-                    <textarea type="text" id="comment1F" class="md-textarea " placeholder="Add Comments...." rows="1"></textarea>
+                    <textarea type="text" id="commentArea" class="md-textarea " placeholder="Add Comments...." rows="1"></textarea>
                   </form>
                 </div>
               </div>
@@ -165,7 +165,7 @@
           <div class="card-body">
             <div class="up-section">
               <a class="btn-floating btn-lg btn-tw" id="like"><i class="fas fa-heart like disliked"></i></a>
-              <a class="btn-floating btn-lg btn-tw" id="comment2" onclick="addfocus(this.id);"><i class="far fa-comment"></i></a>&nbsp;
+              <a class="btn-floating btn-lg btn-tw" id="comment"><i class="far fa-comment"></i></a>&nbsp;
               <a class="btn-floating btn-lg btn-tw" id="share"><i class="far fa-paper-plane"></i></a>&nbsp;
               <a class="btn-floating btn-lg btn-tw" id="bookmark"><i class="fas fa-bookmark like disliked"></i></a><br>
             </div>
@@ -181,10 +181,10 @@
                 <span class="timeadd">9 hours ago</span>
               </div>
               <hr>
-              <div class="addcoment" id="comment2B" style="display:none;">
+              <div class="addcoment" style="display:none;">
                 <div class="md-form">
                   <form method="post">
-                    <textarea type="text" id="comment2F" class="md-textarea " placeholder="Add Comments...." rows="1"></textarea>
+                    <textarea type="text" class="md-textarea " placeholder="Add Comments...." rows="1"></textarea>
                   </form>
                 </div>
               </div>
@@ -201,7 +201,7 @@
           <div class="card-body">
             <div class="up-section">
               <a class="btn-floating btn-lg btn-tw" id="like"><i class="fas fa-heart like disliked"></i></a>
-              <a class="btn-floating btn-lg btn-tw" id="comment3" onclick="addfocus(this.id);"><i class="far fa-comment"></i></a>&nbsp;
+              <a class="btn-floating btn-lg btn-tw" id="comment"><i class="far fa-comment"></i></a>&nbsp;
               <a class="btn-floating btn-lg btn-tw" id="share"><i class="far fa-paper-plane"></i></a>&nbsp;
               <a class="btn-floating btn-lg btn-tw" id="bookmark"><i class="fas fa-bookmark like disliked"></i></a><br>
             </div>
@@ -217,10 +217,10 @@
                 <span class="timeadd">9 hours ago</span>
               </div>
               <hr>
-              <div class="addcoment" id="comment3B" style="display:none;">
+              <div class="addcoment" style="display:none;">
                 <div class="md-form">
                   <form method="post">
-                    <textarea type="text" id="comment3F" class="md-textarea " placeholder="Add Comments...." rows="1"></textarea>
+                    <textarea type="text" class="md-textarea " placeholder="Add Comments...." rows="1"></textarea>
                   </form>
                 </div>
               </div>
@@ -326,7 +326,7 @@
           <div class="card-body">
             <div class="up-section">
               <a class="btn-floating btn-lg btn-tw" id="like"><i class="fas fa-heart like disliked"></i></a>
-              <a class="btn-floating btn-lg btn-tw" id="comment4" onclick="addfocus(this.id);"><i class="far fa-comment"></i></a>&nbsp;
+              <a class="btn-floating btn-lg btn-tw" id="comment"><i class="far fa-comment"></i></a>&nbsp;
               <a class="btn-floating btn-lg btn-tw" id="share"><i class="far fa-paper-plane"></i></a>&nbsp;
               <a class="btn-floating btn-lg btn-tw" id="bookmark"><i class="fas fa-bookmark like disliked"></i></a><br>
             </div>
@@ -342,10 +342,10 @@
                 <span class="timeadd">9 hours ago</span>
               </div>
               <hr>
-              <div class="addcoment" id="comment4B" style="display:none;">
+              <div class="addcoment" style="display:none;">
                 <div class="md-form">
                   <form method="post">
-                    <textarea type="text" id="comment4F" class="md-textarea " placeholder="Add Comments...." rows="1"></textarea>
+                    <textarea type="text" id="comment" class="md-textarea " placeholder="Add Comments...." rows="1"></textarea>
                   </form>
                 </div>
               </div>
@@ -488,8 +488,8 @@
 
       <div class="col-lg-3 col-md-6 col-sm-6" style="background:#ECF0F1;" id="right">
         <div class="page-header text-center">
-            <h4 class="notification-title">Notifications</h4>
-          </div>
+          <h4 class="notification-title">Notifications</h4>
+        </div>
         <div class="notification-body">
           <div class="notifications">
             <ul class="notification-list">
@@ -597,7 +597,7 @@
 
         <!---CONSIGNMENT LARGE SCREEN STARTS-->
         <div class="page-header text-center">
-            <h4 class="consignment-title">Consignments</h4>
+          <h4 class="consignment-title">Consignments</h4>
         </div>
         <div class="consignment-body">
           <div class="consignment">
@@ -615,7 +615,7 @@
                     </ul>
                     <p class="media-heading">Consignment recieved from <b>Abhinandan Purkait</b></p>
                     <button class="accept">Accept</button>
-                    <button class="ignore"  onclick="remove(1);">Ignore</button>
+                    <button class="ignore" onclick="remove(1);">Ignore</button>
                   </div>
                 </div>
               </li>
@@ -632,7 +632,7 @@
                     </ul>
                     <p class="media-heading">Consignment recieved from <b>Neelanjan</b></p>
                     <button class="accept">Accept</button>
-                    <button class="ignore"  onclick="remove(2);">Ignore</button>
+                    <button class="ignore" onclick="remove(2);">Ignore</button>
                   </div>
                 </div>
               </li>
@@ -649,7 +649,7 @@
                     </ul>
                     <p class="media-heading">Consignment recieved from <b>Raied Khan</b></p>
                     <button class="accept">Accept</button>
-                    <button class="ignore"  onclick="remove(3);">Ignore</button>
+                    <button class="ignore" onclick="remove(3);">Ignore</button>
                   </div>
                 </div>
               </li>
